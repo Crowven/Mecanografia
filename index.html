@@ -3,11 +3,97 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mecanografía | Autoevaluación cronometrada</title>
     <title>Mecanografía - Ejercicio de copia</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Mecanografía</p>
+          <h1>Autoevaluación cronometrada</h1>
+          <p class="hero-copy">
+            Selecciona duración, nivel y tipo de texto. Cada resultado se guarda en tu historial y se compara con evaluaciones anteriores.
+          </p>
+        </div>
+        <div class="timer-card" aria-live="polite">
+          <span>Tiempo restante</span>
+          <strong id="timeRemaining">--:--</strong>
+        </div>
+      </section>
+
+      <section class="panel settings-panel" aria-labelledby="settingsTitle">
+        <h2 id="settingsTitle">Configura tu evaluación</h2>
+        <form id="assessmentForm" class="settings-grid">
+          <label>
+            Usuario
+            <input id="userName" name="userName" type="text" value="Invitado" maxlength="40" autocomplete="name" />
+          </label>
+          <label>
+            Duración
+            <select id="duration" name="duration">
+              <option value="60">1 minuto</option>
+              <option value="180">3 minutos</option>
+              <option value="300">5 minutos</option>
+            </select>
+          </label>
+          <label>
+            Nivel
+            <select id="level" name="level">
+              <option value="principiante">Principiante</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select>
+          </label>
+          <label>
+            Tipo de texto
+            <select id="textType" name="textType">
+              <option value="palabras">Palabras comunes</option>
+              <option value="frases">Frases</option>
+              <option value="codigo">Código</option>
+            </select>
+          </label>
+          <button id="startButton" type="submit">Iniciar evaluación</button>
+        </form>
+      </section>
+
+      <section class="workspace">
+        <article class="panel test-panel" aria-labelledby="testTitle">
+          <div class="section-heading">
+            <h2 id="testTitle">Texto de evaluación</h2>
+            <span id="testDescriptor" class="pill">Sin iniciar</span>
+          </div>
+          <p id="promptText" class="prompt" aria-label="Texto objetivo">
+            Configura la evaluación y pulsa iniciar para generar el texto.
+          </p>
+          <label class="typing-label" for="typingInput">Escribe aquí</label>
+          <textarea id="typingInput" rows="8" disabled placeholder="El temporizador comenzará al iniciar la evaluación."></textarea>
+          <div class="actions">
+            <button id="finishButton" type="button" disabled>Finalizar ahora</button>
+            <button id="resetButton" type="button">Reiniciar</button>
+          </div>
+        </article>
+
+        <aside class="panel metrics-panel" aria-labelledby="metricsTitle">
+          <h2 id="metricsTitle">Resultado actual</h2>
+          <dl class="metrics-grid">
+            <div><dt>PPM</dt><dd id="wpmMetric">0</dd></div>
+            <div><dt>Precisión</dt><dd id="accuracyMetric">0%</dd></div>
+            <div><dt>Errores</dt><dd id="errorsMetric">0</dd></div>
+            <div><dt>Caracteres correctos</dt><dd id="correctMetric">0</dd></div>
+          </dl>
+          <div id="comparison" class="comparison empty">Completa una evaluación para ver tu evolución.</div>
+        </aside>
+      </section>
+
+      <section class="panel history-panel" aria-labelledby="historyTitle">
+        <div class="section-heading">
+          <h2 id="historyTitle">Historial y evolución</h2>
+          <button id="clearHistoryButton" type="button" class="secondary">Borrar historial</button>
+        </div>
+        <div id="summary" class="summary-grid"></div>
+        <div class="table-wrapper">
       <section class="hero" aria-labelledby="app-title">
         <p class="eyebrow">Ejercicio de copia</p>
         <h1 id="app-title">Mecanografía con validación carácter por carácter</h1>
@@ -446,6 +532,14 @@
             <thead>
               <tr>
                 <th>Fecha</th>
+                <th>Usuario</th>
+                <th>Config.</th>
+                <th>PPM</th>
+                <th>Precisión</th>
+                <th>Evolución</th>
+              </tr>
+            </thead>
+            <tbody id="historyTable"></tbody>
                 <th>Nivel</th>
                 <th>Modo</th>
                 <th>Duración</th>
@@ -460,6 +554,7 @@
         </div>
       </section>
     </main>
+    <script src="app.js"></script>
     <script type="module" src="src/app.js"></script>
   </body>
 </html>
