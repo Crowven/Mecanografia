@@ -1,4 +1,18 @@
 :root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.18), transparent 34rem),
+    linear-gradient(135deg, #f8fafc 0%, #dbeafe 100%);
   color: #0f172a;
   background: #e2e8f0;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -31,6 +45,9 @@ select {
   padding: 32px 0 48px;
 }
 
+.hero, .panel, .stat {
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 20px 55px rgba(15, 23, 42, 0.10);
 .hero,
 .filters,
 .panel,
@@ -47,6 +64,102 @@ select {
   grid-template-columns: 1fr auto;
   gap: 24px;
   align-items: center;
+  padding: 32px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+}
+
+.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 4rem); line-height: 1; }
+.hero p { max-width: 760px; color: #475569; font-size: 1.08rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.16em; font-size: 0.78rem; font-weight: 800; color: #2563eb !important; }
+.hero-card { padding: 20px; border-radius: 20px; background: #0f172a; color: #e2e8f0; min-width: 230px; }
+.hero-card strong, .hero-card span { display: block; }
+.hero-card span { margin-top: 8px; color: #93c5fd; }
+
+.panel {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 14px;
+}
+
+label { font-weight: 800; }
+select, button, textarea {
+  border: 1px solid #cbd5e1;
+  border-radius: 14px;
+  font: inherit;
+}
+select, button { min-height: 46px; padding: 0 16px; }
+button { border-color: #1d4ed8; background: #2563eb; color: white; font-weight: 800; cursor: pointer; }
+button.secondary { background: white; color: #1d4ed8; }
+button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+.stat { padding: 20px; border-radius: 22px; background: #ffffff; }
+.stat span { display: block; color: #64748b; font-weight: 700; }
+.stat strong { display: block; margin-top: 8px; font-size: 2rem; }
+
+.workspace {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+}
+.panel-heading { display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+.panel-heading h2 { margin: 0; }
+.badge { border-radius: 999px; padding: 6px 12px; background: #dbeafe; color: #1d4ed8; font-weight: 800; white-space: nowrap; }
+.muted { color: #64748b; }
+.target-text {
+  max-height: 420px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 1.02rem;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+.correct { color: #15803d; background: rgba(34, 197, 94, 0.12); }
+.incorrect { color: #b91c1c; background: rgba(239, 68, 68, 0.16); }
+.cursor { border-left: 2px solid #2563eb; }
+
+.typing-panel textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 18px;
+  resize: vertical;
+  min-height: 330px;
+  line-height: 1.6;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+.feedback { color: #475569; font-weight: 700; }
+.results-summary {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 18px 0;
+}
+.results-summary article { padding: 16px; border-radius: 18px; background: #f8fafc; border: 1px solid #e2e8f0; }
+.results-summary strong { display: block; font-size: 1.5rem; }
+.results-summary span { display: block; color: #64748b; font-weight: 700; }
+canvas { width: 100%; max-width: 100%; border-radius: 18px; border: 1px solid #e2e8f0; }
+
+@media (max-width: 860px) {
+  .hero, .controls, .workspace, .stats-grid, .results-summary { grid-template-columns: 1fr; }
   padding: 36px;
 }
 
