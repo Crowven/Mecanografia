@@ -51,7 +51,8 @@ export const renderTypingTrainer = (
     <textarea id="typing-input" spellcheck="false" autocomplete="off" autocapitalize="off" aria-label="Escribe el texto objetivo">${escapeHtml(session.input)}</textarea>
 
     <div class="metrics" aria-label="Métricas de práctica">
-      <article><span>PPM</span><strong>${metrics.wordsPerMinute}</strong></article>
+      <article><span>PPM</span><strong>${metrics.keystrokesPerMinute}</strong></article>
+      <article><span>WPM netas</span><strong>${metrics.netWordsPerMinute}</strong></article>
       <article><span>Precisión</span><strong>${metrics.accuracy}%</strong></article>
       <article><span>Progreso</span><strong>${metrics.progress}%</strong></article>
       <article><span>Errores</span><strong>${metrics.incorrectCharacters}</strong></article>

@@ -24,11 +24,11 @@ El sistema clasificará al usuario en niveles según su rendimiento, principalme
 
 | Nivel | Descripción | Criterios orientativos |
 | --- | --- | --- |
-| Inicial | Usuario que está aprendiendo ubicación de teclas y ritmo básico. | Menos de 20 PPM netas o precisión inferior al 85 %. |
-| Básico | Usuario capaz de completar textos simples con errores frecuentes. | 20–35 PPM netas y precisión mínima del 85 %. |
-| Intermedio | Usuario con ritmo estable y errores moderados. | 36–55 PPM netas y precisión mínima del 90 %. |
-| Avanzado | Usuario rápido, preciso y consistente. | 56–75 PPM netas y precisión mínima del 94 %. |
-| Experto | Usuario con alta velocidad y control de errores. | Más de 75 PPM netas y precisión mínima del 96 %. |
+| Inicial | Usuario que está aprendiendo ubicación de teclas y ritmo básico. | Menos de 20 WPM netas o precisión inferior al 85 %. |
+| Básico | Usuario capaz de completar textos simples con errores frecuentes. | 20–35 WPM netas y precisión mínima del 85 %. |
+| Intermedio | Usuario con ritmo estable y errores moderados. | 36–55 WPM netas y precisión mínima del 90 %. |
+| Avanzado | Usuario rápido, preciso y consistente. | 56–75 WPM netas y precisión mínima del 94 %. |
+| Experto | Usuario con alta velocidad y control de errores. | Más de 75 WPM netas y precisión mínima del 96 %. |
 
 El nivel debe recalcularse después de la evaluación inicial y podrá actualizarse con evaluaciones posteriores o con un promedio ponderado de pruebas recientes.
 
@@ -72,7 +72,7 @@ Modo enfocado en reducir errores antes de aumentar velocidad. Puede penalizar fu
 
 ### 4.6 Ejercicios de velocidad
 
-Modo enfocado en aumentar el ritmo de escritura con límites de tiempo o metas de PPM. Debe mantener un umbral mínimo de precisión para evitar reforzar malos hábitos.
+Modo enfocado en aumentar el ritmo de escritura con límites de tiempo o metas de PPM o WPM. Debe mantener un umbral mínimo de precisión para evitar reforzar malos hábitos.
 
 ## 5. Métricas de evaluación
 
@@ -80,9 +80,10 @@ El sistema debe calcular y mostrar métricas durante o al finalizar cada ejercic
 
 ### 5.1 Métricas principales
 
-- **PPM brutas:** palabras por minuto sin descontar errores.
-- **PPM netas:** palabras por minuto ajustadas por errores.
-- **Precisión:** porcentaje de caracteres correctos respecto al total escrito.
+- **PPM / pulsaciones por minuto (`keystrokesPerMinute` o `ppm`):** caracteres escritos por minuto; incluye caracteres correctos, incorrectos y extra.
+- **WPM brutas (`grossWpm` / `grossWordsPerMinute`):** palabras estándar por minuto sin descontar errores; se calcula con todos los caracteres escritos.
+- **WPM netas (`netWpm` / `netWordsPerMinute`):** palabras estándar por minuto con caracteres correctos o penalizados por errores no corregidos, según el contexto de evaluación.
+- **Precisión (`accuracy`):** porcentaje de caracteres correctos; en práctica en vivo y escritura libre se calcula sobre caracteres escritos, y en puntuación final con texto objetivo sobre el denominador esperado por el modo.
 - **Errores totales:** cantidad de caracteres incorrectos.
 - **Errores corregidos:** errores que el usuario corrigió antes de finalizar.
 - **Errores no corregidos:** errores presentes al finalizar.
@@ -101,11 +102,15 @@ El sistema debe calcular y mostrar métricas durante o al finalizar cada ejercic
 ### 5.3 Cálculo orientativo
 
 - Una palabra estándar equivale a 5 caracteres.
-- `PPM brutas = (caracteres escritos / 5) / minutos transcurridos`.
-- `PPM netas = ((caracteres correctos - penalización por errores) / 5) / minutos transcurridos`.
-- `Precisión = caracteres correctos / caracteres esperados * 100`.
+- `keystrokesPerMinute` / `ppm = caracteres escritos / minutos transcurridos`.
+- `grossWpm = (caracteres escritos / 5) / minutos transcurridos`.
+- `netWpm = (caracteres netos / 5) / minutos transcurridos`.
+- En métricas en vivo, `caracteres netos = caracteres correctos` porque cada error ya queda excluido del numerador neto.
+- En puntuación final con errores no corregidos, `caracteres netos = max(caracteres correctos - errores no corregidos, 0)` para que sustituciones, omisiones y caracteres extra reduzcan la velocidad neta.
+- En práctica en vivo y escritura libre, `accuracy = caracteres correctos / caracteres escritos * 100`; si no hay validación de errores, la precisión será 100 % mientras todos los caracteres se acepten como correctos.
+- En puntuación final con texto objetivo, `accuracy = caracteres correctos / max(caracteres esperados, caracteres escritos) * 100` para que omisiones y caracteres extra no inflen la precisión.
 
-La fórmula exacta de PPM netas deberá mantenerse consistente en toda la aplicación y documentarse si cambia.
+Estas fórmulas son la semántica única de la aplicación: PPM siempre significa caracteres por minuto, mientras que las palabras por minuto se muestran como WPM brutas o WPM netas.
 
 ## 6. Sistema de guardado
 
@@ -173,7 +178,7 @@ Al iniciar por primera vez, la aplicación debe ofrecer una evaluación inicial 
 1. Explicar el objetivo de la evaluación.
 2. Presentar una prueba breve de calentamiento opcional.
 3. Ejecutar una prueba principal con texto equilibrado.
-4. Medir PPM, precisión, errores y consistencia.
+4. Medir PPM, WPM netas, precisión, errores y consistencia.
 5. Asignar nivel inicial.
 6. Recomendar el primer plan de práctica.
 
@@ -190,7 +195,7 @@ Al iniciar por primera vez, la aplicación debe ofrecer una evaluación inicial 
 Al finalizar, se debe mostrar:
 
 - Nivel asignado.
-- PPM brutas y netas.
+- PPM, WPM brutas y WPM netas.
 - Precisión.
 - Errores más frecuentes.
 - Recomendación de modo de práctica.
@@ -224,8 +229,9 @@ También puede permitir una duración personalizada si la interfaz lo soporta.
 Al finalizar, se debe mostrar:
 
 - Duración seleccionada.
-- PPM brutas.
-- PPM netas.
+- PPM.
+- WPM brutas.
+- WPM netas.
 - Precisión.
 - Errores totales.
 - Comparación con mejores resultados del mismo rango de tiempo.
