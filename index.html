@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mecanografiawork · Práctica de mecanografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero card">
+        <div>
+          <p class="eyebrow">Entrenador de mecanografía</p>
+          <h1>Mecanografiawork</h1>
+          <p class="hero__copy">
+            Practica precisión y velocidad con una interfaz clara, métricas en tiempo real
+            y estados visuales que resaltan los errores al escribir.
+          </p>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" id="themeToggle">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle__label">Modo oscuro</span>
+        </button>
+      </header>
+
+      <main class="practice-layout" aria-label="Pantalla principal de práctica">
+        <section class="workspace card" aria-labelledby="practiceTitle">
+          <div class="workspace__topline">
+            <div>
+              <p class="eyebrow">Texto superior</p>
+              <h2 id="practiceTitle">Fragmento de práctica</h2>
+            </div>
+            <span class="status-pill status-pill--live">Sesión activa</span>
+          </div>
+
+          <article class="text-panel" aria-label="Texto de referencia">
+            <span class="typed">La práctica constante</span>
+            <span class="current"> mejora</span>
+            <span> la memoria muscular, reduce errores y convierte cada pulsación en un movimiento más natural.</span>
+          </article>
+
+          <div class="metrics-bar" aria-label="Métricas de escritura">
+            <div class="metric-card">
+              <span class="metric-card__label">Velocidad</span>
+              <strong>48</strong>
+              <span class="metric-card__unit">PPM</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Precisión</span>
+              <strong>96%</strong>
+              <span class="metric-card__unit">12/14 correctas</span>
+            </div>
+            <div class="metric-card metric-card--warning">
+              <span class="metric-card__label">Errores</span>
+              <strong>2</strong>
+              <span class="metric-card__unit">Revisar acentos</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Tiempo</span>
+              <strong>01:24</strong>
+              <span class="metric-card__unit">restante</span>
+            </div>
+          </div>
+
+          <label class="typing-area" for="typingInput">
+            <span class="typing-area__label">Área de escritura inferior</span>
+            <textarea
+              id="typingInput"
+              aria-describedby="typingHelp"
+              spellcheck="false"
+            >La práctica constante mejroa</textarea>
+            <span class="typing-area__error" id="typingHelp">
+              Se detectó un error: “mejroa” debería escribirse “mejora”.
+            </span>
+          </label>
+        </section>
+
+        <aside class="controls card" aria-label="Controles de práctica">
+          <div>
+            <p class="eyebrow">Configuración</p>
+            <h2>Personaliza la sesión</h2>
+          </div>
+
+          <label class="field" for="levelSelect">
+            <span>Nivel</span>
+            <select id="levelSelect">
+              <option>Básico · palabras cortas</option>
+              <option selected>Intermedio · frases completas</option>
+              <option>Avanzado · textos largos</option>
+            </select>
+          </label>
+
+          <label class="field" for="modeSelect">
+            <span>Modo</span>
+            <select id="modeSelect">
+              <option selected>Contrarreloj</option>
+              <option>Precisión perfecta</option>
+              <option>Entrenamiento libre</option>
+            </select>
+          </label>
+
+          <div class="quick-stats" aria-label="Resumen rápido">
+            <div>
+              <span>Racha</span>
+              <strong>8 días</strong>
+            </div>
+            <div>
+              <span>Objetivo</span>
+              <strong>55 PPM</strong>
+            </div>
+          </div>
+
+          <div class="button-group" aria-label="Botones de control">
+            <button class="button button--primary" type="button">Iniciar</button>
+            <button class="button" type="button">Pausar</button>
+            <button class="button button--ghost" type="button">Reiniciar</button>
+          </div>
+
+          <div class="error-preview" role="status">
+            <strong>Estado de error</strong>
+            <p>Las tarjetas y el área de escritura usan acentos rojos cuando hay fallos.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
