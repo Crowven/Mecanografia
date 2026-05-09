@@ -1,58 +1,48 @@
-import type { TypingMetrics } from '../core/metrics/metricsCalculator';
-import type { RecommendedLevel } from '../domain/initialAssessment';
+import {
+  LocalPersistenceService,
+  type ExerciseHistoryRecord,
+  type InitialAssessmentRecord,
+  type ProgressRecord
+} from '../services/localStorageService';
 
-export interface ExerciseProgressRecord {
-  type?: 'exercise';
-  exerciseId: string;
-  completedAt: string;
-  metrics: TypingMetrics;
-}
-
-export interface InitialAssessmentProgressRecord {
-  type: 'initial-assessment';
-  completedAt: string;
-  durationSeconds: number;
-  accuracy: number;
-  keystrokesPerMinute: number;
-  grossWordsPerMinute: number;
-  netWordsPerMinute: number;
-  recommendedLevel: RecommendedLevel;
-}
-
-export type ProgressRecord = ExerciseProgressRecord | InitialAssessmentProgressRecord;
+export type { ExerciseHistoryRecord, InitialAssessmentRecord, ProgressRecord } from '../services/localStorageService';
 
 export interface ProgressRepository {
   list(): ProgressRecord[];
   save(record: ProgressRecord): void;
   clear(): void;
+  exportJson(): string;
+  importJson(json: string, options?: { merge?: boolean }): void;
 }
 
-export const isInitialAssessmentRecord = (record: ProgressRecord): record is InitialAssessmentProgressRecord =>
+export const isInitialAssessmentRecord = (record: ProgressRecord): record is InitialAssessmentRecord =>
   record.type === 'initial-assessment';
+
+export const isExerciseProgressRecord = (record: ProgressRecord): record is ExerciseHistoryRecord =>
+  record.type === 'exercise';
 
 export const getLatestInitialAssessmentRecord = (
   records: ProgressRecord[]
-): InitialAssessmentProgressRecord | undefined => records.find(isInitialAssessmentRecord);
+): InitialAssessmentRecord | undefined => records.find(isInitialAssessmentRecord);
 
-export const createLocalProgressRepository = (storageKey: string): ProgressRepository => ({
-  list() {
-    const rawValue = window.localStorage.getItem(storageKey);
-    if (!rawValue) {
-      return [];
-    }
+export const createLocalProgressRepository = (storageKey: string): ProgressRepository => {
+  const service = new LocalPersistenceService({ storageKey });
 
-    try {
-      return JSON.parse(rawValue) as ProgressRecord[];
-    } catch {
-      window.localStorage.removeItem(storageKey);
-      return [];
+  return {
+    list() {
+      return service.listProgressRecords();
+    },
+    save(record) {
+      service.addProgressRecord(record);
+    },
+    clear() {
+      service.clearProgressRecords();
+    },
+    exportJson() {
+      return service.exportJson();
+    },
+    importJson(json, options) {
+      service.importJson(json, options);
     }
-  },
-  save(record) {
-    const records = this.list();
-    window.localStorage.setItem(storageKey, JSON.stringify([record, ...records].slice(0, 25)));
-  },
-  clear() {
-    window.localStorage.removeItem(storageKey);
-  }
-});
+  };
+};

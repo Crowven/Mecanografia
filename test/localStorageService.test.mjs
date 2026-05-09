@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { LocalPersistenceService, LocalStorageHistoryStore } from '../src/services/localStorageService.js';
+import { LocalPersistenceService, PERSISTENCE_SCHEMA_VERSION } from '../src/services/localStorageService.ts';
 
 class MemoryStorage {
   constructor() {
@@ -22,56 +22,125 @@ class MemoryStorage {
 
 function createService() {
   const storage = new MemoryStorage();
-  return new LocalPersistenceService({
-    storage,
-    historyStore: new LocalStorageHistoryStore(storage, 'history:test-results'),
-  });
+  return new LocalPersistenceService({ storage, storageKey: 'test:persistence:v1' });
 }
 
-test('guarda perfil, configuración y progreso en almacenamiento clave-valor', () => {
+const metrics = {
+  elapsedSeconds: 60,
+  accuracy: 98,
+  keystrokesPerMinute: 250,
+  grossWordsPerMinute: 50,
+  netWordsPerMinute: 48,
+  correctCharacters: 245,
+  incorrectCharacters: 5,
+  progress: 100
+};
+
+test('guarda perfil, configuración y esquema versionado en el servicio principal localStorage', () => {
   const service = createService();
 
-  const profile = service.saveProfile({ name: 'Ada' });
-  const config = service.updateConfig({ theme: 'dark', soundEnabled: false });
-  const progress = service.saveProgress({ currentLessonId: 'home-row', streakDays: 3 });
+  const profile = service.saveProfile({ displayName: 'Ada' });
+  const settings = service.saveSettings({ theme: 'dark', soundEnabled: false });
+  const data = service.exportData();
 
-  assert.equal(profile.name, 'Ada');
+  assert.equal(data.schemaVersion, PERSISTENCE_SCHEMA_VERSION);
+  assert.equal(profile.displayName, 'Ada');
   assert.ok(profile.id);
-  assert.equal(config.theme, 'dark');
-  assert.equal(config.soundEnabled, false);
-  assert.equal(progress.currentLessonId, 'home-row');
-  assert.equal(service.getProgress().streakDays, 3);
+  assert.equal(settings.theme, 'dark');
+  assert.equal(settings.soundEnabled, false);
+  assert.deepEqual(Object.keys(data.levelProgress), ['inicial', 'basico', 'intermedio', 'avanzado', 'experto']);
 });
 
-test('registra y consulta resultados de pruebas ordenados por fecha', async () => {
+test('registra y consulta historial completo sin limitarlo a 25 por defecto', () => {
   const service = createService();
 
-  await service.addTestResult({ id: 'old', createdAt: '2026-01-01T00:00:00.000Z', exerciseId: 'a', wpm: 30 });
-  await service.addTestResult({ id: 'new', createdAt: '2026-02-01T00:00:00.000Z', exerciseId: 'b', wpm: 45 });
+  Array.from({ length: 30 }, (_, index) => index + 1).forEach((index) => {
+    service.addProgressRecord({
+      id: `record-${index}`,
+      type: 'exercise',
+      exerciseId: 'PRI-001',
+      completedAt: `2026-01-${String(index).padStart(2, '0')}T00:00:00.000Z`,
+      metrics
+    });
+  });
 
-  const results = await service.listTestResults({ limit: 1 });
-  const filtered = await service.listTestResults({ exerciseId: 'a' });
+  const records = service.listProgressRecords();
 
-  assert.deepEqual(results.map((item) => item.id), ['new']);
-  assert.deepEqual(filtered.map((item) => item.id), ['old']);
+  assert.equal(records.length, 30);
+  assert.equal(records[0].id, 'record-30');
+  assert.equal(records.at(-1).id, 'record-1');
+  assert.equal(service.exportData().levelProgress.inicial.attempts, 30);
+  assert.deepEqual(service.exportData().levelProgress.inicial.completedExercises, ['PRI-001']);
 });
 
-test('exporta e importa un respaldo JSON reemplazando o fusionando historial', async () => {
+test('respeta un límite configurable de historial cuando el usuario lo define', () => {
   const service = createService();
-  service.saveProfile({ id: 'profile-1', name: 'Ada' });
-  service.saveConfig({ language: 'es', difficulty: 'hard' });
-  service.saveProgress({ completedLessons: ['intro'] });
-  await service.addTestResult({ id: 'r1', createdAt: '2026-01-01T00:00:00.000Z', wpm: 20 });
+  service.saveSettings({ maxHistoryItems: 2 });
 
-  const json = await service.exportJSON();
+  ['old', 'middle', 'new'].forEach((id, index) => {
+    service.addProgressRecord({
+      id,
+      type: 'exercise',
+      exerciseId: 'PRI-001',
+      completedAt: `2026-02-0${index + 1}T00:00:00.000Z`,
+      metrics
+    });
+  });
+
+  assert.deepEqual(service.listProgressRecords().map((record) => record.id), ['new', 'middle']);
+});
+
+test('exporta e importa un respaldo JSON fusionando evaluación, ejercicios y pruebas libres', () => {
+  const service = createService();
+  service.saveProfile({ id: 'profile-1', displayName: 'Ada' });
+  service.saveSettings({ difficulty: 'precision' });
+  service.addProgressRecord({
+    id: 'assessment-1',
+    type: 'initial-assessment',
+    completedAt: '2026-01-01T00:00:00.000Z',
+    durationSeconds: 60,
+    accuracy: 95,
+    keystrokesPerMinute: 240,
+    grossWordsPerMinute: 48,
+    netWordsPerMinute: 45,
+    recommendedLevel: 'intermedio'
+  });
+  service.addProgressRecord({
+    id: 'exercise-1',
+    type: 'exercise',
+    exerciseId: 'INT-001',
+    completedAt: '2026-01-02T00:00:00.000Z',
+    metrics
+  });
+  service.addFreeTestResult({
+    id: 'free-1',
+    completedAt: '2026-01-03T00:00:00.000Z',
+    title: 'Libre',
+    durationSeconds: 120,
+    textLength: 400,
+    accuracy: 97,
+    grossWordsPerMinute: 40,
+    netWordsPerMinute: 38
+  });
+
   const restored = createService();
-  await restored.importJSON(json);
+  restored.importJson(service.exportJson());
 
-  assert.equal(restored.getProfile().name, 'Ada');
-  assert.equal(restored.getConfig().difficulty, 'hard');
-  assert.deepEqual(restored.getProgress().completedLessons, ['intro']);
-  assert.deepEqual((await restored.listTestResults()).map((item) => item.id), ['r1']);
+  assert.equal(restored.getProfile()?.displayName, 'Ada');
+  assert.equal(restored.getSettings().difficulty, 'precision');
+  assert.deepEqual(restored.listProgressRecords().map((record) => record.id), ['exercise-1', 'assessment-1']);
+  assert.deepEqual(restored.exportData().freeTestResults.map((record) => record.id), ['free-1']);
 
-  await restored.importData({ testResults: [{ id: 'r2', createdAt: '2026-03-01T00:00:00.000Z', wpm: 50 }] }, { merge: true });
-  assert.deepEqual((await restored.listTestResults()).map((item) => item.id), ['r2', 'r1']);
+  restored.importData({
+    schemaVersion: 1,
+    profile: null,
+    settings: { maxHistoryItems: null },
+    initialAssessment: null,
+    exerciseHistory: [{ id: 'exercise-2', type: 'exercise', exerciseId: 'AVA-001', completedAt: '2026-03-01T00:00:00.000Z', metrics }],
+    freeTestResults: [],
+    levelProgress: {},
+    updatedAt: '2026-03-01T00:00:00.000Z'
+  }, { merge: true });
+
+  assert.deepEqual(restored.listProgressRecords().map((record) => record.id), ['exercise-2', 'exercise-1', 'assessment-1']);
 });

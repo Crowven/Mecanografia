@@ -207,25 +207,36 @@ Aplicación web estática para practicar mecanografía con ejercicios de copia.
 Abre `index.html` directamente en el navegador o sirve la carpeta con cualquier servidor estático, por ejemplo:
 ## Servicio de almacenamiento local
 
-El proyecto incluye un servicio de persistencia local en `src/services/localStorageService.js` para guardar datos del usuario sin depender de un backend:
+El proyecto usa una única persistencia principal basada en `localStorage`, implementada en TypeScript en `src/services/localStorageService.ts`. La decisión es mantener un respaldo síncrono, simple de exportar y suficiente para los datos de la aplicación actual; `src/storage/localProgressRepository.ts` queda como adaptador fino para la UI de práctica.
 
-- Perfil, configuración básica y progreso se almacenan en `localStorage` con claves prefijadas por `mecanografia:`.
-- El historial extenso de resultados de pruebas usa IndexedDB cuando está disponible.
-- En entornos sin IndexedDB se puede usar `LocalStorageHistoryStore` como abstracción compatible o inyectar otro adaptador con los métodos `add`, `list`, `clear` y `bulkPut`.
-- El servicio permite exportar e importar respaldos completos en JSON.
+El respaldo JSON tiene `schemaVersion: 1` y contiene estas secciones versionadas:
 
-```js
-import LocalPersistenceService from './src/services/localStorageService.js';
+- `profile`: perfil del usuario.
+- `settings`: configuración, incluido `maxHistoryItems` opcional. Por defecto es `null`, así que el historial no se recorta a 25 registros.
+- `initialAssessment`: última evaluación inicial.
+- `exerciseHistory`: historial completo de ejercicios.
+- `freeTestResults`: resultados de pruebas libres.
+- `levelProgress`: progreso agregado por nivel (`inicial`, `basico`, `intermedio`, `avanzado`, `experto`).
+
+La interfaz permite exportar e importar el respaldo desde el panel de progreso. Las importaciones se fusionan con el historial local para evitar perder datos del dispositivo.
+
+```ts
+import { LocalPersistenceService } from './src/services/localStorageService';
 
 const storage = new LocalPersistenceService();
 
-storage.saveProfile({ name: 'Ada' });
-storage.updateConfig({ theme: 'dark' });
-storage.saveProgress({ currentLessonId: 'home-row' });
-await storage.addTestResult({ exerciseId: 'home-row', wpm: 48, accuracy: 97 });
+storage.saveProfile({ displayName: 'Ada' });
+storage.saveSettings({ theme: 'dark' });
+storage.addProgressRecord({
+  id: 'exercise-1',
+  type: 'exercise',
+  exerciseId: 'PRI-001',
+  completedAt: new Date().toISOString(),
+  metrics
+});
 
-const backup = await storage.exportJSON();
-await storage.importJSON(backup, { merge: true });
+const backup = storage.exportJson();
+storage.importJson(backup, { merge: true });
 ```
 Pantalla principal responsive para practicar mecanografía en navegador web.
 
