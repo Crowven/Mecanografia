@@ -1,0 +1,89 @@
+[
+  {
+    "id": "narrativo-001",
+    "categoria": "narrativo",
+    "titulo": "La estación bajo la lluvia",
+    "dificultad": "avanzado",
+    "texto": "A las 6:45, Irene llegó a la estación con el abrigo empapado y una carta sin abrir. El panel anunciaba: 'Retraso indefinido — vía 3'. Mientras contaba las baldosas rotas, escuchó un violín detrás del kiosco; la melodía parecía repetir su nombre, pero nadie la miraba. Cuando el tren apareció, silencioso y casi vacío, decidió subir aunque el billete marcara otro destino. En el asiento 17-B encontró una nota: ¿Te atreves a recordar?",
+    "metadatos": {
+      "longitud_caracteres": 433,
+      "numero_palabras": 73,
+      "presencia_cifras": true,
+      "puntuacion": true,
+      "simbolos_especiales": [
+        "-",
+        "—"
+      ]
+    }
+  },
+  {
+    "id": "tecnico-001",
+    "categoria": "tecnico",
+    "titulo": "Protocolo de despliegue seguro",
+    "dificultad": "avanzado",
+    "texto": "Antes de publicar la versión 2.8.0, el equipo debe ejecutar pruebas de carga, revisar los logs de error y validar la firma SHA-256 del paquete. Si la latencia media supera los 120 ms o el uso de CPU alcanza el 85 %, se activa el plan de reversión. El despliegue se realiza en tres zonas, con ventanas de 15 minutos y verificación mediante /health-check. Ningún cambio de esquema debe aplicarse sin copia cifrada, ticket aprobado y responsable asignado.",
+    "metadatos": {
+      "longitud_caracteres": 452,
+      "numero_palabras": 78,
+      "presencia_cifras": true,
+      "puntuacion": true,
+      "simbolos_especiales": [
+        "%",
+        "-",
+        "/"
+      ]
+    }
+  },
+  {
+    "id": "administrativo-001",
+    "categoria": "administrativo",
+    "titulo": "Comunicación interna de inventario",
+    "dificultad": "avanzado",
+    "texto": "Se informa al personal que el inventario trimestral comenzará el 03/06 a las 08:30 en el almacén principal. Cada área deberá entregar el formulario INV-24, firmado por su responsable, antes de las 14:00. Los artículos con etiqueta #pendiente se registrarán en una hoja separada; las diferencias superiores a 50 unidades requerirán informe justificativo. Para consultas, escriban a gestion@empresa.test indicando centro, código de activo y observaciones relevantes.",
+    "metadatos": {
+      "longitud_caracteres": 464,
+      "numero_palabras": 66,
+      "presencia_cifras": true,
+      "puntuacion": true,
+      "simbolos_especiales": [
+        "#",
+        "-",
+        "/",
+        "@"
+      ]
+    }
+  },
+  {
+    "id": "educativo-001",
+    "categoria": "educativo",
+    "titulo": "Lectura crítica de datos",
+    "dificultad": "avanzado",
+    "texto": "Al interpretar una gráfica, no basta con observar si la línea sube o baja. El alumnado debe identificar la escala, la fuente y el intervalo temporal: un aumento del 4 % puede ser significativo en una muestra de 10.000 casos, pero irrelevante si procede de 12 respuestas. Comparar variables exige formular hipótesis, detectar sesgos y explicar límites. La conclusión debe responder a la pregunta inicial, no a una impresión rápida del dibujo.",
+    "metadatos": {
+      "longitud_caracteres": 441,
+      "numero_palabras": 72,
+      "presencia_cifras": true,
+      "puntuacion": true,
+      "simbolos_especiales": [
+        "%"
+      ]
+    }
+  },
+  {
+    "id": "cotidiano-001",
+    "categoria": "uso cotidiano",
+    "titulo": "Organización de una semana intensa",
+    "dificultad": "avanzado",
+    "texto": "El lunes, antes de las 9:00, necesito confirmar la cita médica, pagar la factura de luz (47,80 €) y recoger el paquete en la taquilla B-12. El martes prepararé comida para tres días: arroz integral, verduras y salsa de yogur. Si llueve, cambiaremos el entrenamiento al gimnasio; si no, saldremos a correr 5 km por el parque. El viernes revisaré gastos, mensajes pendientes y la lista de compras para no improvisar el sábado.",
+    "metadatos": {
+      "longitud_caracteres": 424,
+      "numero_palabras": 73,
+      "presencia_cifras": true,
+      "puntuacion": true,
+      "simbolos_especiales": [
+        "-",
+        "€"
+      ]
+    }
+  }
+]
