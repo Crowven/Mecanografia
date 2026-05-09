@@ -29,5 +29,5 @@ export const appConfig: AppConfig = {
   defaultExerciseId: 'PRI-001',
   targetWordsPerMinute: 45,
   runtime: detectRuntime(),
-  storageKey: 'mecanografia:progress:v1'
+  storageKey: 'mecanografia:persistence:v1'
 };
