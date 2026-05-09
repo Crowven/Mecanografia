@@ -1,39 +1,45 @@
+import { loadExerciseBank } from './loadExerciseBank';
+
+export type ExerciseLevel = 'principiante' | 'basico' | 'intermedio' | 'avanzado';
+
 export interface Exercise {
   id: string;
   title: string;
   description: string;
-  level: 'inicial' | 'intermedio' | 'avanzado';
+  level: ExerciseLevel;
+  type: string;
+  suggestedDurationSeconds?: number;
+  technicalObjectives: string[];
   text: string;
   tags: string[];
 }
 
-export const exerciseBank: Exercise[] = [
-  {
-    id: 'home-row-es',
-    title: 'Fila guía en español',
-    description: 'Practica precisión con palabras frecuentes y acentos comunes.',
-    level: 'inicial',
-    text: 'casa sala ala fada jara cada nada dada asada salsas caras claras alas',
-    tags: ['fila-guia', 'español']
-  },
-  {
-    id: 'punctuation-flow',
-    title: 'Ritmo con puntuación',
-    description: 'Entrena pausas, comas y puntos sin perder velocidad.',
-    level: 'intermedio',
-    text: 'La práctica diaria mejora la memoria muscular, reduce errores y aumenta la confianza.',
-    tags: ['puntuación', 'fluidez']
-  },
-  {
-    id: 'accented-words',
-    title: 'Acentos y signos',
-    description: 'Refuerza caracteres propios del español.',
-    level: 'avanzado',
-    text: '¿Quién escribió la canción? María, José y Lucía revisarán rápidamente el guion.',
-    tags: ['acentos', 'signos']
-  }
-];
+export interface ExerciseFilters {
+  level?: ExerciseLevel | 'todos';
+  type?: string;
+  tag?: string;
+}
+
+export const exerciseBank: Exercise[] = loadExerciseBank();
 
 export const getExerciseById = (id: string): Exercise => {
   return exerciseBank.find((exercise) => exercise.id === id) ?? exerciseBank[0];
 };
+
+export const getExerciseLevels = (exercises: Exercise[] = exerciseBank): ExerciseLevel[] =>
+  Array.from(new Set(exercises.map((exercise) => exercise.level)));
+
+export const getExerciseTypes = (exercises: Exercise[] = exerciseBank): string[] =>
+  Array.from(new Set(exercises.map((exercise) => exercise.type))).sort((first, second) => first.localeCompare(second, 'es'));
+
+export const getExerciseTags = (exercises: Exercise[] = exerciseBank): string[] =>
+  Array.from(new Set(exercises.flatMap((exercise) => exercise.tags))).sort((first, second) => first.localeCompare(second, 'es'));
+
+export const filterExercises = (exercises: Exercise[], filters: ExerciseFilters): Exercise[] =>
+  exercises.filter((exercise) => {
+    const matchesLevel = !filters.level || filters.level === 'todos' || exercise.level === filters.level;
+    const matchesType = !filters.type || filters.type === 'todos' || exercise.type === filters.type;
+    const matchesTag = !filters.tag || filters.tag === 'todos' || exercise.tags.includes(filters.tag);
+
+    return matchesLevel && matchesType && matchesTag;
+  });
