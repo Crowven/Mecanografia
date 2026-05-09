@@ -26,7 +26,7 @@ const detectRuntime = (): AppRuntime => {
 
 export const appConfig: AppConfig = {
   appName: 'Mecanografía',
-  defaultExerciseId: 'home-row-es',
+  defaultExerciseId: 'PRI-001',
   targetWordsPerMinute: 45,
   runtime: detectRuntime(),
   storageKey: 'mecanografia:progress:v1'

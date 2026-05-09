@@ -254,3 +254,35 @@ textarea:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+.exercise-selector {
+  display: grid;
+  gap: 1rem;
+}
+
+.exercise-selector__filters {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.exercise-details {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  color: #475569;
+  display: grid;
+  gap: 0.35rem;
+  padding: 0.85rem 1rem;
+}
+
+.exercise-details span:first-child {
+  color: #1e293b;
+  font-weight: 800;
+}
+
+@media (max-width: 860px) {
+  .exercise-selector__filters {
+    grid-template-columns: 1fr;
+  }
+}
