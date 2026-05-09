@@ -18,8 +18,9 @@ export interface ScoringInput {
 }
 
 export interface ScoringResult {
-  ppm: number;
-  wpm: number;
+  keystrokesPerMinute: number;
+  grossWordsPerMinute: number;
+  netWordsPerMinute: number;
   accuracy: number;
   grossErrors: number;
   netErrors: number;
@@ -38,29 +39,45 @@ function minutesFromSeconds(elapsedSeconds: number): number {
   return Math.max(elapsedSeconds / SECONDS_PER_MINUTE, 0);
 }
 
-/** Calculates pulsaciones por minuto (PPM) from typed characters and elapsed time. */
-export function calculatePPM(typedCharacters: number, elapsedSeconds: number): number {
+function calculateRatePerMinute(characters: number, elapsedSeconds: number): number {
   const minutes = minutesFromSeconds(elapsedSeconds);
 
-  if (minutes === 0 || typedCharacters <= 0) {
+  if (minutes === 0 || characters <= 0) {
     return 0;
   }
 
-  return roundTo(typedCharacters / minutes);
+  return roundTo(characters / minutes);
+}
+
+/** Calculates pulsaciones por minuto (PPM) from typed characters and elapsed time. */
+export function calculatePPM(typedCharacters: number, elapsedSeconds: number): number {
+  return calculateRatePerMinute(typedCharacters, elapsedSeconds);
+}
+
+/** Calculates gross words per minute (WPM), using all typed characters and the standard 5-character word. */
+export function calculateGrossWPM(typedCharacters: number, elapsedSeconds: number): number {
+  return roundTo(calculateRatePerMinute(typedCharacters, elapsedSeconds) / CHARACTERS_PER_WORD);
 }
 
 /** Calculates words per minute (WPM), using the standard 5 characters per word. */
 export function calculateWPM(typedCharacters: number, elapsedSeconds: number): number {
-  return roundTo(calculatePPM(typedCharacters, elapsedSeconds) / CHARACTERS_PER_WORD);
+  return calculateGrossWPM(typedCharacters, elapsedSeconds);
 }
 
-/** Calculates accuracy as the percentage of typed characters that are correct. */
-export function calculateAccuracy(correctCharacters: number, typedCharacters: number): number {
-  if (typedCharacters <= 0 || correctCharacters <= 0) {
+/** Calculates net words per minute after subtracting uncorrected errors from correct characters. */
+export function calculateNetWPM(correctCharacters: number, netErrors: number, elapsedSeconds: number): number {
+  const netCharacters = Math.max(correctCharacters - Math.max(netErrors, 0), 0);
+
+  return roundTo(calculateRatePerMinute(netCharacters, elapsedSeconds) / CHARACTERS_PER_WORD);
+}
+
+/** Calculates accuracy as the percentage of denominator characters that are correct. */
+export function calculateAccuracy(correctCharacters: number, denominatorCharacters: number): number {
+  if (denominatorCharacters <= 0 || correctCharacters <= 0) {
     return 0;
   }
 
-  return roundTo((correctCharacters / typedCharacters) * 100);
+  return roundTo((correctCharacters / denominatorCharacters) * 100);
 }
 
 /** Counts all visible mistakes: substitutions, omissions and extra characters. */
@@ -83,17 +100,17 @@ export function calculateNetErrors(grossErrors: number, correctedErrors = 0): nu
   return Math.max(grossErrors - Math.max(correctedErrors, 0), 0);
 }
 
-/** Classifies the final result from speed and accuracy thresholds. */
-export function classifyFinalResult(wpm: number, accuracy: number): FinalClassification {
-  if (accuracy >= 98 && wpm >= 60) {
+/** Classifies the final result from net speed and accuracy thresholds. */
+export function classifyFinalResult(netWordsPerMinute: number, accuracy: number): FinalClassification {
+  if (accuracy >= 98 && netWordsPerMinute >= 60) {
     return 'excellent';
   }
 
-  if (accuracy >= 95 && wpm >= 40) {
+  if (accuracy >= 95 && netWordsPerMinute >= 40) {
     return 'good';
   }
 
-  if (accuracy >= 90 && wpm >= 25) {
+  if (accuracy >= 90 && netWordsPerMinute >= 25) {
     return 'average';
   }
 
@@ -108,16 +125,23 @@ export function calculateScore(input: ScoringInput): ScoringResult {
     input.extraCharacters,
   );
   const netErrors = calculateNetErrors(grossErrors, input.correctedErrors);
-  const ppm = calculatePPM(input.typedCharacters, input.elapsedSeconds);
-  const wpm = calculateWPM(input.typedCharacters, input.elapsedSeconds);
-  const accuracy = calculateAccuracy(input.correctCharacters, input.typedCharacters);
+  const expectedCharacters = Math.max(
+    input.correctCharacters + input.incorrectCharacters + input.missingCharacters,
+    0,
+  );
+  const accuracyDenominator = Math.max(input.typedCharacters, expectedCharacters);
+  const keystrokesPerMinute = calculatePPM(input.typedCharacters, input.elapsedSeconds);
+  const grossWordsPerMinute = calculateGrossWPM(input.typedCharacters, input.elapsedSeconds);
+  const netWordsPerMinute = calculateNetWPM(input.correctCharacters, netErrors, input.elapsedSeconds);
+  const accuracy = calculateAccuracy(input.correctCharacters, accuracyDenominator);
 
   return {
-    ppm,
-    wpm,
+    keystrokesPerMinute,
+    grossWordsPerMinute,
+    netWordsPerMinute,
     accuracy,
     grossErrors,
     netErrors,
-    finalClassification: classifyFinalResult(wpm, accuracy),
+    finalClassification: classifyFinalResult(netWordsPerMinute, accuracy),
   };
 }

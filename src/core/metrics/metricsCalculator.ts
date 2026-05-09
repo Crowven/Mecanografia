@@ -3,13 +3,23 @@ import type { TypingSession } from '../typing/typingEngine';
 export interface TypingMetrics {
   elapsedSeconds: number;
   accuracy: number;
-  wordsPerMinute: number;
+  keystrokesPerMinute: number;
+  grossWordsPerMinute: number;
+  netWordsPerMinute: number;
   correctCharacters: number;
   incorrectCharacters: number;
   progress: number;
 }
 
 const STANDARD_WORD_LENGTH = 5;
+
+const calculateWordsPerMinute = (characters: number, elapsedMinutes: number): number => {
+  if (elapsedMinutes === 0 || characters <= 0) {
+    return 0;
+  }
+
+  return Math.round(characters / STANDARD_WORD_LENGTH / elapsedMinutes);
+};
 
 export const calculateMetrics = (session: TypingSession, now = Date.now()): TypingMetrics => {
   const typedCharacters = session.characters.filter((character) => character.typed !== undefined);
@@ -21,9 +31,11 @@ export const calculateMetrics = (session: TypingSession, now = Date.now()): Typi
   return {
     elapsedSeconds: Math.round(elapsedMs / 1000),
     accuracy: typedCharacters.length === 0 ? 100 : Math.round((correctCharacters / typedCharacters.length) * 100),
-    wordsPerMinute: elapsedMinutes === 0 ? 0 : Math.round(correctCharacters / STANDARD_WORD_LENGTH / elapsedMinutes),
+    keystrokesPerMinute: elapsedMinutes === 0 ? 0 : Math.round(typedCharacters.length / elapsedMinutes),
+    grossWordsPerMinute: calculateWordsPerMinute(typedCharacters.length, elapsedMinutes),
+    netWordsPerMinute: calculateWordsPerMinute(correctCharacters, elapsedMinutes),
     correctCharacters,
     incorrectCharacters,
-    progress: Math.round((session.input.length / session.targetText.length) * 100)
+    progress: session.targetText.length === 0 ? 100 : Math.round((session.input.length / session.targetText.length) * 100)
   };
 };

@@ -17,6 +17,7 @@ export const renderProgressPanel = (records: ProgressRecord[]): string => `
               <tr>
                 <th scope="col">Fecha</th>
                 <th scope="col">PPM</th>
+                <th scope="col">WPM netas</th>
                 <th scope="col">Precisión</th>
               </tr>
             </thead>
@@ -26,7 +27,8 @@ export const renderProgressPanel = (records: ProgressRecord[]): string => `
                   (record) => `
                     <tr>
                       <td>${new Date(record.completedAt).toLocaleString('es')}</td>
-                      <td>${record.metrics.wordsPerMinute}</td>
+                      <td>${record.metrics.keystrokesPerMinute}</td>
+                      <td>${record.metrics.netWordsPerMinute}</td>
                       <td>${record.metrics.accuracy}%</td>
                     </tr>`
                 )
