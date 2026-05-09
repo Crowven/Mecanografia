@@ -51,7 +51,8 @@ const LEVEL_ALIASES: Record<string, ExerciseLevel> = {
   básico: 'basico',
   basico: 'basico',
   intermedio: 'intermedio',
-  avanzado: 'avanzado'
+  avanzado: 'avanzado',
+  experto: 'experto'
 };
 
 const normalizeTextValue = (value: string): string => value.trim().toLocaleLowerCase('es-ES');

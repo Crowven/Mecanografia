@@ -33,6 +33,13 @@ export const renderExerciseSelector = (
   options: ExerciseSelectorOptions
 ): string => `
   <section class="exercise-selector" aria-label="Selector de ejercicios">
+    <div class="exercise-selector__heading">
+      <div>
+        <p class="eyebrow">Práctica guiada</p>
+        <h2>Ejercicios</h2>
+      </div>
+      <button id="open-assessment" type="button">Evaluación inicial</button>
+    </div>
     <div class="exercise-selector__filters">
       <label class="field">
         <span>Nivel</span>
