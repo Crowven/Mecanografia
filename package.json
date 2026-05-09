@@ -1,6 +1,12 @@
 {
   "name": "mecanografia",
   "version": "0.1.0",
+  "description": "Arquitectura de ejercicios de mecanografía con motor compartido de tiempo y métricas.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
   "private": true,
   "type": "module",
   "scripts": {
