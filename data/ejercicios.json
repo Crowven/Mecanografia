@@ -1,0 +1,4901 @@
+[
+  {
+    "id": "PRI-001",
+    "titulo": "Principiante 01: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "asa sal ala salsa dado fallas jaja kilo lado faja",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-002",
+    "titulo": "Principiante 02: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "masa pala dala sala jala calma llama dama gasa hada falla",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-003",
+    "titulo": "Principiante 03: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "silla libro pluma mapa luna rama copa taza perla campo mano mesa",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-004",
+    "titulo": "Principiante 04: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "salsa dado fallas jaja kilo lado faja dama gala asa sal ala salsa",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-005",
+    "titulo": "Principiante 05: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "sala jala calma llama dama gasa hada falla casa masa pala dala sala jala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-006",
+    "titulo": "Principiante 06: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "mapa luna rama copa taza perla campo mano mesa silla",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-007",
+    "titulo": "Principiante 07: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "jaja kilo lado faja dama gala asa sal ala salsa dado",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-008",
+    "titulo": "Principiante 08: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "llama dama gasa hada falla casa masa pala dala sala jala calma",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-009",
+    "titulo": "Principiante 09: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "copa taza perla campo mano mesa silla libro pluma mapa luna rama copa",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-010",
+    "titulo": "Principiante 10: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "faja dama gala asa sal ala salsa dado fallas jaja kilo lado faja dama",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-011",
+    "titulo": "Principiante 11: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "hada falla casa masa pala dala sala jala calma llama",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-012",
+    "titulo": "Principiante 12: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "campo mano mesa silla libro pluma mapa luna rama copa taza",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-013",
+    "titulo": "Principiante 13: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "asa sal ala salsa dado fallas jaja kilo lado faja dama gala",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-014",
+    "titulo": "Principiante 14: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "masa pala dala sala jala calma llama dama gasa hada falla casa masa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-015",
+    "titulo": "Principiante 15: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "silla libro pluma mapa luna rama copa taza perla campo mano mesa silla libro",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-016",
+    "titulo": "Principiante 16: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "salsa dado fallas jaja kilo lado faja dama gala asa",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-017",
+    "titulo": "Principiante 17: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "sala jala calma llama dama gasa hada falla casa masa pala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-018",
+    "titulo": "Principiante 18: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "mapa luna rama copa taza perla campo mano mesa silla libro pluma",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-019",
+    "titulo": "Principiante 19: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "jaja kilo lado faja dama gala asa sal ala salsa dado fallas jaja",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-020",
+    "titulo": "Principiante 20: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "llama dama gasa hada falla casa masa pala dala sala jala calma llama dama",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-021",
+    "titulo": "Principiante 21: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "copa taza perla campo mano mesa silla libro pluma mapa",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-022",
+    "titulo": "Principiante 22: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "faja dama gala asa sal ala salsa dado fallas jaja kilo",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-023",
+    "titulo": "Principiante 23: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "hada falla casa masa pala dala sala jala calma llama dama gasa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-024",
+    "titulo": "Principiante 24: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "campo mano mesa silla libro pluma mapa luna rama copa taza perla campo",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-025",
+    "titulo": "Principiante 25: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "asa sal ala salsa dado fallas jaja kilo lado faja dama gala asa sal",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-026",
+    "titulo": "Principiante 26: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "masa pala dala sala jala calma llama dama gasa hada",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-027",
+    "titulo": "Principiante 27: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "silla libro pluma mapa luna rama copa taza perla campo mano",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-028",
+    "titulo": "Principiante 28: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "salsa dado fallas jaja kilo lado faja dama gala asa sal ala",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-029",
+    "titulo": "Principiante 29: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "sala jala calma llama dama gasa hada falla casa masa pala dala sala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-030",
+    "titulo": "Principiante 30: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "mapa luna rama copa taza perla campo mano mesa silla libro pluma mapa luna",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-031",
+    "titulo": "Principiante 31: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "jaja kilo lado faja dama gala asa sal ala salsa",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-032",
+    "titulo": "Principiante 32: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "llama dama gasa hada falla casa masa pala dala sala jala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-033",
+    "titulo": "Principiante 33: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "copa taza perla campo mano mesa silla libro pluma mapa luna rama",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-034",
+    "titulo": "Principiante 34: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "faja dama gala asa sal ala salsa dado fallas jaja kilo lado faja",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-035",
+    "titulo": "Principiante 35: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "hada falla casa masa pala dala sala jala calma llama dama gasa hada falla",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-036",
+    "titulo": "Principiante 36: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "campo mano mesa silla libro pluma mapa luna rama copa",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-037",
+    "titulo": "Principiante 37: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "asa sal ala salsa dado fallas jaja kilo lado faja dama",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-038",
+    "titulo": "Principiante 38: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "masa pala dala sala jala calma llama dama gasa hada falla casa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-039",
+    "titulo": "Principiante 39: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "silla libro pluma mapa luna rama copa taza perla campo mano mesa silla",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-040",
+    "titulo": "Principiante 40: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "salsa dado fallas jaja kilo lado faja dama gala asa sal ala salsa dado",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-041",
+    "titulo": "Principiante 41: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "sala jala calma llama dama gasa hada falla casa masa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-042",
+    "titulo": "Principiante 42: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "mapa luna rama copa taza perla campo mano mesa silla libro",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-043",
+    "titulo": "Principiante 43: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "jaja kilo lado faja dama gala asa sal ala salsa dado fallas",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-044",
+    "titulo": "Principiante 44: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "llama dama gasa hada falla casa masa pala dala sala jala calma llama",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-045",
+    "titulo": "Principiante 45: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "copa taza perla campo mano mesa silla libro pluma mapa luna rama copa taza",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-046",
+    "titulo": "Principiante 46: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "faja dama gala asa sal ala salsa dado fallas jaja",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-047",
+    "titulo": "Principiante 47: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "hada falla casa masa pala dala sala jala calma llama dama",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-048",
+    "titulo": "Principiante 48: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "campo mano mesa silla libro pluma mapa luna rama copa taza perla",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-049",
+    "titulo": "Principiante 49: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "asa sal ala salsa dado fallas jaja kilo lado faja dama gala asa",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-050",
+    "titulo": "Principiante 50: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "masa pala dala sala jala calma llama dama gasa hada falla casa masa pala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-051",
+    "titulo": "Principiante 51: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "silla libro pluma mapa luna rama copa taza perla campo",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-052",
+    "titulo": "Principiante 52: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "salsa dado fallas jaja kilo lado faja dama gala asa sal",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-053",
+    "titulo": "Principiante 53: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "sala jala calma llama dama gasa hada falla casa masa pala dala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-054",
+    "titulo": "Principiante 54: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "mapa luna rama copa taza perla campo mano mesa silla libro pluma mapa",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-055",
+    "titulo": "Principiante 55: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "jaja kilo lado faja dama gala asa sal ala salsa dado fallas jaja kilo",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-056",
+    "titulo": "Principiante 56: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "llama dama gasa hada falla casa masa pala dala sala",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-057",
+    "titulo": "Principiante 57: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "copa taza perla campo mano mesa silla libro pluma mapa luna",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "PRI-058",
+    "titulo": "Principiante 58: fila guia",
+    "nivel": "principiante",
+    "tipo": "fila_guia",
+    "texto": "faja dama gala asa sal ala salsa dado fallas jaja kilo lado",
+    "duracion_sugerida_segundos": 90,
+    "objetivos_tecnicos": [
+      "Reforzar la posición base ASDF JKLÑ",
+      "Alternar manos sin desplazar la muñeca"
+    ],
+    "etiquetas": [
+      "fila_guia"
+    ]
+  },
+  {
+    "id": "PRI-059",
+    "titulo": "Principiante 59: precision",
+    "nivel": "principiante",
+    "tipo": "precision",
+    "texto": "hada falla casa masa pala dala sala jala calma llama dama gasa hada",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Priorizar exactitud sobre velocidad",
+      "Detectar repeticiones y letras dobles"
+    ],
+    "etiquetas": [
+      "precision"
+    ]
+  },
+  {
+    "id": "PRI-060",
+    "titulo": "Principiante 60: palabras",
+    "nivel": "principiante",
+    "tipo": "palabras",
+    "texto": "campo mano mesa silla libro pluma mapa luna rama copa taza perla campo mano",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Construir memoria muscular con palabras cortas",
+      "Mantener ritmo uniforme"
+    ],
+    "etiquetas": [
+      "palabras"
+    ]
+  },
+  {
+    "id": "BAS-001",
+    "titulo": "Básico 01: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "qwe poi ruta tuyo perro queso torre yema puro ropa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-002",
+    "titulo": "Básico 02: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "vbn zona cava nube banco vaca cena zorro nieve buzon vecino",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-003",
+    "titulo": "Básico 03: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto. hola, bien.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-004",
+    "titulo": "Básico 04: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "tuyo perro queso torre yema puro ropa quieto equipo qwe poi ruta tuyo",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-005",
+    "titulo": "Básico 05: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "nube banco vaca cena zorro nieve buzon vecino zxc vbn zona cava nube banco",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-006",
+    "titulo": "Básico 06: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si;",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-007",
+    "titulo": "Básico 07: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "torre yema puro ropa quieto equipo qwe poi ruta tuyo perro",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-008",
+    "titulo": "Básico 08: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "cena zorro nieve buzon vecino zxc vbn zona cava nube banco vaca",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-009",
+    "titulo": "Básico 09: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "nota: pausa; texto, punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota:",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-010",
+    "titulo": "Básico 10: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "ropa quieto equipo qwe poi ruta tuyo perro queso torre yema puro ropa quieto",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-011",
+    "titulo": "Básico 11: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "buzon vecino zxc vbn zona cava nube banco vaca cena",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-012",
+    "titulo": "Básico 12: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota: pausa;",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-013",
+    "titulo": "Básico 13: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "qwe poi ruta tuyo perro queso torre yema puro ropa quieto equipo",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-014",
+    "titulo": "Básico 14: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "vbn zona cava nube banco vaca cena zorro nieve buzon vecino zxc vbn",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-015",
+    "titulo": "Básico 15: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si; no:",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-016",
+    "titulo": "Básico 16: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "tuyo perro queso torre yema puro ropa quieto equipo qwe",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-017",
+    "titulo": "Básico 17: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "nube banco vaca cena zorro nieve buzon vecino zxc vbn zona",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-018",
+    "titulo": "Básico 18: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si; no: tal vez",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-019",
+    "titulo": "Básico 19: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "torre yema puro ropa quieto equipo qwe poi ruta tuyo perro queso torre",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-020",
+    "titulo": "Básico 20: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "cena zorro nieve buzon vecino zxc vbn zona cava nube banco vaca cena zorro",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-021",
+    "titulo": "Básico 21: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "nota: pausa; texto, punto. hola, bien. si; no: tal vez claro.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-022",
+    "titulo": "Básico 22: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "ropa quieto equipo qwe poi ruta tuyo perro queso torre yema",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-023",
+    "titulo": "Básico 23: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "buzon vecino zxc vbn zona cava nube banco vaca cena zorro nieve",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-024",
+    "titulo": "Básico 24: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-025",
+    "titulo": "Básico 25: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "qwe poi ruta tuyo perro queso torre yema puro ropa quieto equipo qwe poi",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-026",
+    "titulo": "Básico 26: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "vbn zona cava nube banco vaca cena zorro nieve buzon",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-027",
+    "titulo": "Básico 27: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto. hola,",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-028",
+    "titulo": "Básico 28: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "tuyo perro queso torre yema puro ropa quieto equipo qwe poi ruta",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-029",
+    "titulo": "Básico 29: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "nube banco vaca cena zorro nieve buzon vecino zxc vbn zona cava nube",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-030",
+    "titulo": "Básico 30: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si; no: tal vez claro. uno, dos",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-031",
+    "titulo": "Básico 31: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "torre yema puro ropa quieto equipo qwe poi ruta tuyo",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-032",
+    "titulo": "Básico 32: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "cena zorro nieve buzon vecino zxc vbn zona cava nube banco",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-033",
+    "titulo": "Básico 33: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "nota: pausa; texto, punto. hola, bien. si; no: tal vez claro. uno, dos fin.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-034",
+    "titulo": "Básico 34: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "ropa quieto equipo qwe poi ruta tuyo perro queso torre yema puro ropa",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-035",
+    "titulo": "Básico 35: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "buzon vecino zxc vbn zona cava nube banco vaca cena zorro nieve buzon vecino",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-036",
+    "titulo": "Básico 36: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota:",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-037",
+    "titulo": "Básico 37: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "qwe poi ruta tuyo perro queso torre yema puro ropa quieto",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-038",
+    "titulo": "Básico 38: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "vbn zona cava nube banco vaca cena zorro nieve buzon vecino zxc",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-039",
+    "titulo": "Básico 39: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si;",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-040",
+    "titulo": "Básico 40: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "tuyo perro queso torre yema puro ropa quieto equipo qwe poi ruta tuyo perro",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-041",
+    "titulo": "Básico 41: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "nube banco vaca cena zorro nieve buzon vecino zxc vbn",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-042",
+    "titulo": "Básico 42: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si; no:",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-043",
+    "titulo": "Básico 43: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "torre yema puro ropa quieto equipo qwe poi ruta tuyo perro queso",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-044",
+    "titulo": "Básico 44: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "cena zorro nieve buzon vecino zxc vbn zona cava nube banco vaca cena",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-045",
+    "titulo": "Básico 45: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "nota: pausa; texto, punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota: pausa;",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-046",
+    "titulo": "Básico 46: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "ropa quieto equipo qwe poi ruta tuyo perro queso torre",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-047",
+    "titulo": "Básico 47: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "buzon vecino zxc vbn zona cava nube banco vaca cena zorro",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-048",
+    "titulo": "Básico 48: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota: pausa; texto,",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-049",
+    "titulo": "Básico 49: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "qwe poi ruta tuyo perro queso torre yema puro ropa quieto equipo qwe",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-050",
+    "titulo": "Básico 50: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "vbn zona cava nube banco vaca cena zorro nieve buzon vecino zxc vbn zona",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-051",
+    "titulo": "Básico 51: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-052",
+    "titulo": "Básico 52: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "tuyo perro queso torre yema puro ropa quieto equipo qwe poi",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-053",
+    "titulo": "Básico 53: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "nube banco vaca cena zorro nieve buzon vecino zxc vbn zona cava",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-054",
+    "titulo": "Básico 54: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "claro. uno, dos fin. nota: pausa; texto, punto. hola, bien. si; no: tal vez claro.",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-055",
+    "titulo": "Básico 55: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "torre yema puro ropa quieto equipo qwe poi ruta tuyo perro queso torre yema",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-056",
+    "titulo": "Básico 56: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "cena zorro nieve buzon vecino zxc vbn zona cava nube",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-057",
+    "titulo": "Básico 57: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "nota: pausa; texto, punto. hola, bien. si; no: tal vez claro. uno, dos",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "BAS-058",
+    "titulo": "Básico 58: fila superior",
+    "nivel": "basico",
+    "tipo": "fila_superior",
+    "texto": "ropa quieto equipo qwe poi ruta tuyo perro queso torre yema puro",
+    "duracion_sugerida_segundos": 120,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila superior",
+      "Regresar siempre a la fila guía"
+    ],
+    "etiquetas": [
+      "fila_superior"
+    ]
+  },
+  {
+    "id": "BAS-059",
+    "titulo": "Básico 59: fila inferior",
+    "nivel": "basico",
+    "tipo": "fila_inferior",
+    "texto": "buzon vecino zxc vbn zona cava nube banco vaca cena zorro nieve buzon",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar alcance a la fila inferior",
+      "Controlar pulsaciones con meñique e índice"
+    ],
+    "etiquetas": [
+      "fila_inferior"
+    ]
+  },
+  {
+    "id": "BAS-060",
+    "titulo": "Básico 60: puntuacion",
+    "nivel": "basico",
+    "tipo": "puntuacion",
+    "texto": "punto. hola, bien. si; no: tal vez claro. uno, dos fin. nota: pausa; texto, punto. hola,",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Insertar pausas con coma, punto, dos puntos y punto y coma",
+      "Coordinar espacios después de signos"
+    ],
+    "etiquetas": [
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-001",
+    "titulo": "Intermedio 01: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "café mamá sofá árbol lápiz acción rápido teléfono música país",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-002",
+    "titulo": "Intermedio 02: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "34 56 78 90 2026 15% 3.14 24/7 100 45 67",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-003",
+    "titulo": "Intermedio 03: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-004",
+    "titulo": "Intermedio 04: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "árbol lápiz acción rápido teléfono música país día camión café mamá sofá árbol",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-005",
+    "titulo": "Intermedio 05: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "90 2026 15% 3.14 24/7 100 45 67 12 34 56 78 90 2026",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-006",
+    "titulo": "Intermedio 06: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-007",
+    "titulo": "Intermedio 07: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "rápido teléfono música país día camión café mamá sofá árbol lápiz",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-008",
+    "titulo": "Intermedio 08: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "3.14 24/7 100 45 67 12 34 56 78 90 2026 15%",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-009",
+    "titulo": "Intermedio 09: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-010",
+    "titulo": "Intermedio 10: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "país día camión café mamá sofá árbol lápiz acción rápido teléfono música país día",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-011",
+    "titulo": "Intermedio 11: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "45 67 12 34 56 78 90 2026 15% 3.14",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-012",
+    "titulo": "Intermedio 12: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-013",
+    "titulo": "Intermedio 13: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "café mamá sofá árbol lápiz acción rápido teléfono música país día camión",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-014",
+    "titulo": "Intermedio 14: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "34 56 78 90 2026 15% 3.14 24/7 100 45 67 12 34",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-015",
+    "titulo": "Intermedio 15: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-016",
+    "titulo": "Intermedio 16: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "árbol lápiz acción rápido teléfono música país día camión café",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-017",
+    "titulo": "Intermedio 17: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "90 2026 15% 3.14 24/7 100 45 67 12 34 56",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-018",
+    "titulo": "Intermedio 18: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-019",
+    "titulo": "Intermedio 19: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "rápido teléfono música país día camión café mamá sofá árbol lápiz acción rápido",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-020",
+    "titulo": "Intermedio 20: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "3.14 24/7 100 45 67 12 34 56 78 90 2026 15% 3.14 24/7",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-021",
+    "titulo": "Intermedio 21: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-022",
+    "titulo": "Intermedio 22: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "país día camión café mamá sofá árbol lápiz acción rápido teléfono",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-023",
+    "titulo": "Intermedio 23: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "45 67 12 34 56 78 90 2026 15% 3.14 24/7 100",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-024",
+    "titulo": "Intermedio 24: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-025",
+    "titulo": "Intermedio 25: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "café mamá sofá árbol lápiz acción rápido teléfono música país día camión café mamá",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-026",
+    "titulo": "Intermedio 26: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "34 56 78 90 2026 15% 3.14 24/7 100 45",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-027",
+    "titulo": "Intermedio 27: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-028",
+    "titulo": "Intermedio 28: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "árbol lápiz acción rápido teléfono música país día camión café mamá sofá",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-029",
+    "titulo": "Intermedio 29: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "90 2026 15% 3.14 24/7 100 45 67 12 34 56 78 90",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-030",
+    "titulo": "Intermedio 30: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-031",
+    "titulo": "Intermedio 31: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "rápido teléfono música país día camión café mamá sofá árbol",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-032",
+    "titulo": "Intermedio 32: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "3.14 24/7 100 45 67 12 34 56 78 90 2026",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-033",
+    "titulo": "Intermedio 33: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-034",
+    "titulo": "Intermedio 34: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "país día camión café mamá sofá árbol lápiz acción rápido teléfono música país",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-035",
+    "titulo": "Intermedio 35: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "45 67 12 34 56 78 90 2026 15% 3.14 24/7 100 45 67",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-036",
+    "titulo": "Intermedio 36: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-037",
+    "titulo": "Intermedio 37: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "café mamá sofá árbol lápiz acción rápido teléfono música país día",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-038",
+    "titulo": "Intermedio 38: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "34 56 78 90 2026 15% 3.14 24/7 100 45 67 12",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-039",
+    "titulo": "Intermedio 39: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-040",
+    "titulo": "Intermedio 40: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "árbol lápiz acción rápido teléfono música país día camión café mamá sofá árbol lápiz",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-041",
+    "titulo": "Intermedio 41: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "90 2026 15% 3.14 24/7 100 45 67 12 34",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-042",
+    "titulo": "Intermedio 42: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-043",
+    "titulo": "Intermedio 43: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "rápido teléfono música país día camión café mamá sofá árbol lápiz acción",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-044",
+    "titulo": "Intermedio 44: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "3.14 24/7 100 45 67 12 34 56 78 90 2026 15% 3.14",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-045",
+    "titulo": "Intermedio 45: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-046",
+    "titulo": "Intermedio 46: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "país día camión café mamá sofá árbol lápiz acción rápido",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-047",
+    "titulo": "Intermedio 47: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "45 67 12 34 56 78 90 2026 15% 3.14 24/7",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-048",
+    "titulo": "Intermedio 48: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-049",
+    "titulo": "Intermedio 49: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "café mamá sofá árbol lápiz acción rápido teléfono música país día camión café",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-050",
+    "titulo": "Intermedio 50: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "34 56 78 90 2026 15% 3.14 24/7 100 45 67 12 34 56",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-051",
+    "titulo": "Intermedio 51: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-052",
+    "titulo": "Intermedio 52: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "árbol lápiz acción rápido teléfono música país día camión café mamá",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-053",
+    "titulo": "Intermedio 53: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "90 2026 15% 3.14 24/7 100 45 67 12 34 56 78",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-054",
+    "titulo": "Intermedio 54: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-055",
+    "titulo": "Intermedio 55: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "rápido teléfono música país día camión café mamá sofá árbol lápiz acción rápido teléfono",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-056",
+    "titulo": "Intermedio 56: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "3.14 24/7 100 45 67 12 34 56 78 90",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-057",
+    "titulo": "Intermedio 57: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "Cada tecla tiene un dedo asignado. Mantén la vista en la pantalla.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "INT-058",
+    "titulo": "Intermedio 58: acentos",
+    "nivel": "intermedio",
+    "tipo": "acentos",
+    "texto": "país día camión café mamá sofá árbol lápiz acción rápido teléfono música",
+    "duracion_sugerida_segundos": 150,
+    "objetivos_tecnicos": [
+      "Practicar vocales acentuadas y eñe",
+      "Coordinar tecla muerta de acento con vocal"
+    ],
+    "etiquetas": [
+      "acentos"
+    ]
+  },
+  {
+    "id": "INT-059",
+    "titulo": "Intermedio 59: numeros",
+    "nivel": "intermedio",
+    "tipo": "numeros",
+    "texto": "45 67 12 34 56 78 90 2026 15% 3.14 24/7 100 45",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Ubicar números sin mirar el teclado",
+      "Combinar cifras con separadores y porcentajes"
+    ],
+    "etiquetas": [
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "INT-060",
+    "titulo": "Intermedio 60: frases",
+    "nivel": "intermedio",
+    "tipo": "frases",
+    "texto": "La postura estable reduce errores. La práctica diaria mejora la precisión. Escribe con calma y respira bien.",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Sostener precisión en oraciones completas",
+      "Respetar mayúsculas iniciales y puntos"
+    ],
+    "etiquetas": [
+      "acentos",
+      "frases",
+      "mayusculas",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "AVA-001",
+    "titulo": "Avanzado 01: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "@ # $ % & * + = ? !",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-002",
+    "titulo": "Avanzado 02: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "rápido constante fluido veloz preciso avance control meta pulso tiempo marca",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-003",
+    "titulo": "Avanzado 03: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-004",
+    "titulo": "Avanzado 04: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "% & * + = ? ! / - @ # $ %",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-005",
+    "titulo": "Avanzado 05: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "veloz preciso avance control meta pulso tiempo marca ritmo rápido constante fluido veloz preciso",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-006",
+    "titulo": "Avanzado 06: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-007",
+    "titulo": "Avanzado 07: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "+ = ? ! / - @ # $ % &",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-008",
+    "titulo": "Avanzado 08: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "control meta pulso tiempo marca ritmo rápido constante fluido veloz preciso avance",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-009",
+    "titulo": "Avanzado 09: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-010",
+    "titulo": "Avanzado 10: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "! / - @ # $ % & * + = ? ! /",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-011",
+    "titulo": "Avanzado 11: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "tiempo marca ritmo rápido constante fluido veloz preciso avance control",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-012",
+    "titulo": "Avanzado 12: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta Texto",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-013",
+    "titulo": "Avanzado 13: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "@ # $ % & * + = ? ! / -",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-014",
+    "titulo": "Avanzado 14: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "rápido constante fluido veloz preciso avance control meta pulso tiempo marca ritmo rápido",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-015",
+    "titulo": "Avanzado 15: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis España",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-016",
+    "titulo": "Avanzado 16: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "% & * + = ? ! / - @",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-017",
+    "titulo": "Avanzado 17: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "veloz preciso avance control meta pulso tiempo marca ritmo rápido constante",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-018",
+    "titulo": "Avanzado 18: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-019",
+    "titulo": "Avanzado 19: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "+ = ? ! / - @ # $ % & * +",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-020",
+    "titulo": "Avanzado 20: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "control meta pulso tiempo marca ritmo rápido constante fluido veloz preciso avance control meta",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-021",
+    "titulo": "Avanzado 21: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-022",
+    "titulo": "Avanzado 22: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "! / - @ # $ % & * + =",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-023",
+    "titulo": "Avanzado 23: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "tiempo marca ritmo rápido constante fluido veloz preciso avance control meta pulso",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-024",
+    "titulo": "Avanzado 24: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-025",
+    "titulo": "Avanzado 25: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "@ # $ % & * + = ? ! / - @ #",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-026",
+    "titulo": "Avanzado 26: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "rápido constante fluido veloz preciso avance control meta pulso tiempo",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-027",
+    "titulo": "Avanzado 27: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-028",
+    "titulo": "Avanzado 28: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "% & * + = ? ! / - @ # $",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-029",
+    "titulo": "Avanzado 29: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "veloz preciso avance control meta pulso tiempo marca ritmo rápido constante fluido veloz",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-030",
+    "titulo": "Avanzado 30: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio Curso",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-031",
+    "titulo": "Avanzado 31: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "+ = ? ! / - @ # $ %",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-032",
+    "titulo": "Avanzado 32: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "control meta pulso tiempo marca ritmo rápido constante fluido veloz preciso",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-033",
+    "titulo": "Avanzado 33: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-034",
+    "titulo": "Avanzado 34: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "! / - @ # $ % & * + = ? !",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-035",
+    "titulo": "Avanzado 35: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "tiempo marca ritmo rápido constante fluido veloz preciso avance control meta pulso tiempo marca",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-036",
+    "titulo": "Avanzado 36: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-037",
+    "titulo": "Avanzado 37: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "@ # $ % & * + = ? ! /",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-038",
+    "titulo": "Avanzado 38: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "rápido constante fluido veloz preciso avance control meta pulso tiempo marca ritmo",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-039",
+    "titulo": "Avanzado 39: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-040",
+    "titulo": "Avanzado 40: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "% & * + = ? ! / - @ # $ % &",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-041",
+    "titulo": "Avanzado 41: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "veloz preciso avance control meta pulso tiempo marca ritmo rápido",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-042",
+    "titulo": "Avanzado 42: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis España",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-043",
+    "titulo": "Avanzado 43: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "+ = ? ! / - @ # $ % & *",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-044",
+    "titulo": "Avanzado 44: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "control meta pulso tiempo marca ritmo rápido constante fluido veloz preciso avance control",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-045",
+    "titulo": "Avanzado 45: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta Texto",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-046",
+    "titulo": "Avanzado 46: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "! / - @ # $ % & * +",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-047",
+    "titulo": "Avanzado 47: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "tiempo marca ritmo rápido constante fluido veloz preciso avance control meta",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-048",
+    "titulo": "Avanzado 48: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-049",
+    "titulo": "Avanzado 49: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "@ # $ % & * + = ? ! / - @",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-050",
+    "titulo": "Avanzado 50: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "rápido constante fluido veloz preciso avance control meta pulso tiempo marca ritmo rápido constante",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-051",
+    "titulo": "Avanzado 51: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-052",
+    "titulo": "Avanzado 52: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "% & * + = ? ! / - @ #",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-053",
+    "titulo": "Avanzado 53: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "veloz preciso avance control meta pulso tiempo marca ritmo rápido constante fluido",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-054",
+    "titulo": "Avanzado 54: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-055",
+    "titulo": "Avanzado 55: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "+ = ? ! / - @ # $ % & * + =",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-056",
+    "titulo": "Avanzado 56: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "control meta pulso tiempo marca ritmo rápido constante fluido veloz",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-057",
+    "titulo": "Avanzado 57: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Meta Texto Ritmo Prueba Madrid Ana Luis España Tecla Inicio Curso",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "AVA-058",
+    "titulo": "Avanzado 58: simbolos",
+    "nivel": "avanzado",
+    "tipo": "simbolos",
+    "texto": "! / - @ # $ % & * + = ?",
+    "duracion_sugerida_segundos": 180,
+    "objetivos_tecnicos": [
+      "Dominar combinaciones con Shift y AltGr",
+      "Escribir símbolos frecuentes con control"
+    ],
+    "etiquetas": [
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "AVA-059",
+    "titulo": "Avanzado 59: velocidad",
+    "nivel": "avanzado",
+    "tipo": "velocidad",
+    "texto": "tiempo marca ritmo rápido constante fluido veloz preciso avance control meta pulso tiempo",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Incrementar palabras por minuto de forma gradual",
+      "Evitar correcciones impulsivas"
+    ],
+    "etiquetas": [
+      "acentos",
+      "velocidad"
+    ]
+  },
+  {
+    "id": "AVA-060",
+    "titulo": "Avanzado 60: mayusculas",
+    "nivel": "avanzado",
+    "tipo": "mayusculas",
+    "texto": "Prueba Madrid Ana Luis España Tecla Inicio Curso Nivel Meta Texto Ritmo Prueba Madrid",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Usar Shift con la mano contraria",
+      "Controlar nombres propios y comienzos de frase"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas"
+    ]
+  },
+  {
+    "id": "EXP-001",
+    "titulo": "Experto 01: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-002",
+    "titulo": "Experto 02: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "if (ok) { return true; const id = 42; user.name array[0]",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-003",
+    "titulo": "Experto 03: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-004",
+    "titulo": "Experto 04: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-005",
+    "titulo": "Experto 05: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "user.name array[0] for i in print('hola') a && b",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-006",
+    "titulo": "Experto 06: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-007",
+    "titulo": "Experto 07: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla #",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-008",
+    "titulo": "Experto 08: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "print('hola') a && b x += 1 path/to/file key: value",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-009",
+    "titulo": "Experto 09: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-010",
+    "titulo": "Experto 10: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-011",
+    "titulo": "Experto 11: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "path/to/file key: value let x = 1; if (ok) { return true;",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-012",
+    "titulo": "Experto 12: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-013",
+    "titulo": "Experto 13: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-014",
+    "titulo": "Experto 14: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "if (ok) { return true; const id = 42; user.name array[0]",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-015",
+    "titulo": "Experto 15: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-016",
+    "titulo": "Experto 16: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-017",
+    "titulo": "Experto 17: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "user.name array[0] for i in print('hola') a && b",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-018",
+    "titulo": "Experto 18: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-019",
+    "titulo": "Experto 19: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-020",
+    "titulo": "Experto 20: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "print('hola') a && b x += 1 path/to/file key: value",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-021",
+    "titulo": "Experto 21: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-022",
+    "titulo": "Experto 22: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80%",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-023",
+    "titulo": "Experto 23: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "path/to/file key: value let x = 1; if (ok) { return true;",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-024",
+    "titulo": "Experto 24: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-025",
+    "titulo": "Experto 25: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-026",
+    "titulo": "Experto 26: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "if (ok) { return true; const id = 42; user.name array[0]",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-027",
+    "titulo": "Experto 27: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-028",
+    "titulo": "Experto 28: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo!",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-029",
+    "titulo": "Experto 29: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "user.name array[0] for i in print('hola') a && b",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-030",
+    "titulo": "Experto 30: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-031",
+    "titulo": "Experto 31: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-032",
+    "titulo": "Experto 32: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "print('hola') a && b x += 1 path/to/file key: value",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-033",
+    "titulo": "Experto 33: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-034",
+    "titulo": "Experto 34: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-035",
+    "titulo": "Experto 35: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "path/to/file key: value let x = 1; if (ok) { return true;",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-036",
+    "titulo": "Experto 36: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-037",
+    "titulo": "Experto 37: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-038",
+    "titulo": "Experto 38: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "if (ok) { return true; const id = 42; user.name array[0]",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-039",
+    "titulo": "Experto 39: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-040",
+    "titulo": "Experto 40: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla #",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-041",
+    "titulo": "Experto 41: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "user.name array[0] for i in print('hola') a && b",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-042",
+    "titulo": "Experto 42: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-043",
+    "titulo": "Experto 43: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-044",
+    "titulo": "Experto 44: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "print('hola') a && b x += 1 path/to/file key: value",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-045",
+    "titulo": "Experto 45: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-046",
+    "titulo": "Experto 46: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-047",
+    "titulo": "Experto 47: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "path/to/file key: value let x = 1; if (ok) { return true;",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-048",
+    "titulo": "Experto 48: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-049",
+    "titulo": "Experto 49: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-050",
+    "titulo": "Experto 50: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "if (ok) { return true; const id = 42; user.name array[0]",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-051",
+    "titulo": "Experto 51: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-052",
+    "titulo": "Experto 52: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-053",
+    "titulo": "Experto 53: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "user.name array[0] for i in print('hola') a && b",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-054",
+    "titulo": "Experto 54: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  },
+  {
+    "id": "EXP-055",
+    "titulo": "Experto 55: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "3 cafés valor 80% ¿Dónde? fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80%",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-056",
+    "titulo": "Experto 56: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "print('hola') a && b x += 1 path/to/file key: value",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-057",
+    "titulo": "Experto 57: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "Pulsa Ctrl+C con cuidado. La clave usa letras y números.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-058",
+    "titulo": "Experto 58: mixto",
+    "nivel": "experto",
+    "tipo": "mixto",
+    "texto": "fin; ok km 24 Nº 7 Café 12 Ruta-45 ¡Listo! año 2026 tecla # nota: sí 3 cafés valor 80% ¿Dónde?",
+    "duracion_sugerida_segundos": 210,
+    "objetivos_tecnicos": [
+      "Combinar letras, números, acentos y signos",
+      "Cambiar de patrón sin perder postura"
+    ],
+    "etiquetas": [
+      "acentos",
+      "mayusculas",
+      "mixto",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-059",
+    "titulo": "Experto 59: codigo",
+    "nivel": "experto",
+    "tipo": "codigo",
+    "texto": "path/to/file key: value let x = 1; if (ok) { return true;",
+    "duracion_sugerida_segundos": 240,
+    "objetivos_tecnicos": [
+      "Practicar caracteres usados en programación",
+      "Mantener exactitud en espacios y delimitadores"
+    ],
+    "etiquetas": [
+      "codigo",
+      "numeros",
+      "puntuacion",
+      "simbolos"
+    ]
+  },
+  {
+    "id": "EXP-060",
+    "titulo": "Experto 60: dictado tecnico",
+    "nivel": "experto",
+    "tipo": "dictado_tecnico",
+    "texto": "El informe incluye fecha y hora. El usuario guarda 3 archivos. La sesión inicia a las 09:30.",
+    "duracion_sugerida_segundos": 270,
+    "objetivos_tecnicos": [
+      "Transcribir instrucciones técnicas con precisión",
+      "Integrar horarios, atajos y vocabulario digital"
+    ],
+    "etiquetas": [
+      "acentos",
+      "dictado_tecnico",
+      "mayusculas",
+      "numeros",
+      "puntuacion"
+    ]
+  }
+]
