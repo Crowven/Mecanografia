@@ -1,5 +1,11 @@
 # Mecanografia
 
+## Vista previa de la interfaz principal
+
+![Mockup de la interfaz principal](docs/assets/interfaz-principal.svg)
+
+La imagen vectorial anterior muestra la pantalla principal prevista para documentación y revisión visual: texto a copiar, área de escritura, métricas de PPM/WPM/precisión/errores, selector de nivel, selector de modo y estado visual de error.
+
 ## Evaluación inicial
 
 El paquete incluye un módulo de evaluación inicial para medir una prueba de
