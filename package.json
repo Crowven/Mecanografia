@@ -1,0 +1,40 @@
+{
+  "name": "mecanografia",
+  "version": "0.1.0",
+  "description": "Arquitectura de ejercicios de mecanografía con motor compartido de tiempo y métricas.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
+    "tauri:dev": "cargo tauri dev",
+    "tauri:build": "cargo tauri build"
+  },
+  "dependencies": {
+    "vite-plugin-pwa": "latest"
+  },
+  "devDependencies": {
+    "concurrently": "latest",
+    "electron": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "wait-on": "latest"
+  },
+  "main": "electron/main.cjs"
+  "version": "1.0.0",
+  "description": "Panel de progreso para una aplicación de mecanografía.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "check": "node --check src/app.js"
+  }
+}
