@@ -12,15 +12,27 @@ export const renderProgressPanel = (records: ProgressRecord[]): string => `
     ${
       records.length === 0
         ? '<p class="empty-state">Completa un ejercicio para guardar métricas en este dispositivo.</p>'
-        : `<ol class="history-list">${records
-            .map(
-              (record) => `
-                <li>
-                  <span>${new Date(record.completedAt).toLocaleString('es')}</span>
-                  <strong>${record.metrics.wordsPerMinute} PPM · ${record.metrics.accuracy}%</strong>
-                </li>`
-            )
-            .join('')}</ol>`
+        : `<table class="history-table">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">PPM</th>
+                <th scope="col">Precisión</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${records
+                .map(
+                  (record) => `
+                    <tr>
+                      <td>${new Date(record.completedAt).toLocaleString('es')}</td>
+                      <td>${record.metrics.wordsPerMinute}</td>
+                      <td>${record.metrics.accuracy}%</td>
+                    </tr>`
+                )
+                .join('')}
+            </tbody>
+          </table>`
     }
   </section>
 `;
