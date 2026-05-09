@@ -72,6 +72,558 @@
       </section>
     </main>
 
+    <title>Mecanografía | Autoevaluación cronometrada</title>
+    <title>Mecanografía - Ejercicio de copia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Mecanografía</p>
+          <h1>Autoevaluación cronometrada</h1>
+          <p class="hero-copy">
+            Selecciona duración, nivel y tipo de texto. Cada resultado se guarda en tu historial y se compara con evaluaciones anteriores.
+          </p>
+        </div>
+        <div class="timer-card" aria-live="polite">
+          <span>Tiempo restante</span>
+          <strong id="timeRemaining">--:--</strong>
+        </div>
+      </section>
+
+      <section class="panel settings-panel" aria-labelledby="settingsTitle">
+        <h2 id="settingsTitle">Configura tu evaluación</h2>
+        <form id="assessmentForm" class="settings-grid">
+          <label>
+            Usuario
+            <input id="userName" name="userName" type="text" value="Invitado" maxlength="40" autocomplete="name" />
+          </label>
+          <label>
+            Duración
+            <select id="duration" name="duration">
+              <option value="60">1 minuto</option>
+              <option value="180">3 minutos</option>
+              <option value="300">5 minutos</option>
+            </select>
+          </label>
+          <label>
+            Nivel
+            <select id="level" name="level">
+              <option value="principiante">Principiante</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select>
+          </label>
+          <label>
+            Tipo de texto
+            <select id="textType" name="textType">
+              <option value="palabras">Palabras comunes</option>
+              <option value="frases">Frases</option>
+              <option value="codigo">Código</option>
+            </select>
+          </label>
+          <button id="startButton" type="submit">Iniciar evaluación</button>
+        </form>
+      </section>
+
+      <section class="workspace">
+        <article class="panel test-panel" aria-labelledby="testTitle">
+          <div class="section-heading">
+            <h2 id="testTitle">Texto de evaluación</h2>
+            <span id="testDescriptor" class="pill">Sin iniciar</span>
+          </div>
+          <p id="promptText" class="prompt" aria-label="Texto objetivo">
+            Configura la evaluación y pulsa iniciar para generar el texto.
+          </p>
+          <label class="typing-label" for="typingInput">Escribe aquí</label>
+          <textarea id="typingInput" rows="8" disabled placeholder="El temporizador comenzará al iniciar la evaluación."></textarea>
+          <div class="actions">
+            <button id="finishButton" type="button" disabled>Finalizar ahora</button>
+            <button id="resetButton" type="button">Reiniciar</button>
+          </div>
+        </article>
+
+        <aside class="panel metrics-panel" aria-labelledby="metricsTitle">
+          <h2 id="metricsTitle">Resultado actual</h2>
+          <dl class="metrics-grid">
+            <div><dt>PPM</dt><dd id="wpmMetric">0</dd></div>
+            <div><dt>Precisión</dt><dd id="accuracyMetric">0%</dd></div>
+            <div><dt>Errores</dt><dd id="errorsMetric">0</dd></div>
+            <div><dt>Caracteres correctos</dt><dd id="correctMetric">0</dd></div>
+          </dl>
+          <div id="comparison" class="comparison empty">Completa una evaluación para ver tu evolución.</div>
+        </aside>
+      </section>
+
+      <section class="panel history-panel" aria-labelledby="historyTitle">
+        <div class="section-heading">
+          <h2 id="historyTitle">Historial y evolución</h2>
+          <button id="clearHistoryButton" type="button" class="secondary">Borrar historial</button>
+        </div>
+        <div id="summary" class="summary-grid"></div>
+        <div class="table-wrapper">
+      <section class="hero" aria-labelledby="app-title">
+        <p class="eyebrow">Ejercicio de copia</p>
+        <h1 id="app-title">Mecanografía con validación carácter por carácter</h1>
+        <p class="intro">
+          Copia el texto propuesto. Cada carácter se evalúa al instante y los errores se guardan para el resumen final.
+        </p>
+      </section>
+
+      <section class="panel settings" aria-labelledby="settings-title">
+        <div>
+          <h2 id="settings-title">Configuración del aviso sonoro</h2>
+          <p>Activa o ajusta el sonido que se reproduce cuando se detecta un carácter incorrecto.</p>
+        </div>
+        <label class="toggle">
+          <input id="sound-enabled" type="checkbox" checked />
+          <span>Aviso sonoro al fallar</span>
+        </label>
+        <label>
+          Volumen
+          <input id="sound-volume" type="range" min="0" max="1" value="0.35" step="0.05" />
+        </label>
+      </section>
+
+      <section class="panel exercise" aria-labelledby="exercise-title">
+        <div class="exercise-header">
+          <div>
+            <h2 id="exercise-title">Texto a copiar</h2>
+            <p>Los caracteres verdes son correctos, los rojos incorrectos y los grises están pendientes.</p>
+          </div>
+          <button id="reset-button" type="button">Reiniciar</button>
+        </div>
+
+        <p id="target-text" class="target-text" aria-label="Texto objetivo"></p>
+
+        <label for="copy-input">Escribe aquí</label>
+        <textarea
+          id="copy-input"
+          rows="4"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Empieza a copiar el texto..."
+        ></textarea>
+      </section>
+
+      <section class="stats-grid" aria-label="Estadísticas del ejercicio">
+        <article class="stat-card">
+          <span class="stat-label">Correctos</span>
+          <strong id="correct-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Errores registrados</span>
+          <strong id="error-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Pendientes</span>
+          <strong id="pending-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Precisión final</span>
+          <strong id="accuracy-rate">100%</strong>
+        </article>
+      </section>
+
+      <section class="panel results" aria-labelledby="results-title">
+        <h2 id="results-title">Registro de errores</h2>
+        <p id="completion-message" class="completion-message" aria-live="polite">Completa el ejercicio para ver el resultado final.</p>
+        <ol id="error-log" class="error-log"></ol>
+      </section>
+    </main>
+
+    <script src="typingExercise.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mecanografía | Entrenador</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell" aria-label="Entrenador de mecanografía">
+      <section class="hero-card">
+        <div class="hero-copy">
+          <p class="eyebrow">Entrenamiento en tiempo real</p>
+          <h1>Mejora tu velocidad y precisión al escribir</h1>
+          <p class="hero-description">
+            Practica con textos adaptados a tu nivel, controla la duración de cada sesión
+            y sigue tus métricas mientras escribes.
+          </p>
+        </div>
+
+        <form class="controls" aria-label="Controles de práctica">
+          <label>
+            <span>Modo</span>
+            <select id="mode" name="mode">
+              <option value="paragraph">Párrafos</option>
+              <option value="words">Palabras</option>
+              <option value="quote">Citas</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Nivel</span>
+            <select id="level" name="level">
+              <option value="easy">Inicial</option>
+              <option value="medium" selected>Intermedio</option>
+              <option value="hard">Avanzado</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Duración</span>
+            <select id="duration" name="duration">
+              <option value="60">1 min</option>
+              <option value="180" selected>3 min</option>
+              <option value="300">5 min</option>
+            </select>
+          </label>
+
+          <button class="primary-button" type="button" id="restart">Reiniciar</button>
+        </form>
+      </section>
+
+      <section class="metrics-bar" aria-label="Métricas en tiempo real">
+        <article class="metric">
+          <span class="metric-label">PPM</span>
+          <strong id="wpm">0</strong>
+          <small>palabras/min</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Precisión</span>
+          <strong id="accuracy">100%</strong>
+          <small>caracteres correctos</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Errores</span>
+          <strong id="errors">0</strong>
+          <small>por sesión</small>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Tiempo</span>
+          <strong id="timer">03:00</strong>
+          <small>restante</small>
+        </article>
+      </section>
+
+      <section class="practice-grid">
+        <article class="panel target-panel" aria-labelledby="target-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Texto objetivo</p>
+              <h2 id="target-title">Lee y replica</h2>
+            </div>
+            <span class="status-pill" id="status">Listo</span>
+          </div>
+          <p class="target-text" id="target-text" aria-live="polite"></p>
+        </article>
+
+        <article class="panel typing-panel" aria-labelledby="typing-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Panel de escritura</p>
+              <h2 id="typing-title">Escribe aquí</h2>
+            </div>
+          </div>
+          <textarea
+            id="typing-input"
+            aria-label="Área de escritura para practicar mecanografía"
+            placeholder="Empieza a escribir para iniciar el cronómetro..."
+            spellcheck="false"
+          ></textarea>
+        </article>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mecanografiawork · Práctica de mecanografía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero card">
+        <div>
+          <p class="eyebrow">Entrenador de mecanografía</p>
+          <h1>Mecanografiawork</h1>
+          <p class="hero__copy">
+            Practica precisión y velocidad con una interfaz clara, métricas en tiempo real
+            y estados visuales que resaltan los errores al escribir.
+          </p>
+        </div>
+        <button class="theme-toggle" type="button" aria-label="Cambiar tema" id="themeToggle">
+          <span class="theme-toggle__icon" aria-hidden="true">☾</span>
+          <span class="theme-toggle__label">Modo oscuro</span>
+        </button>
+      </header>
+
+      <main class="practice-layout" aria-label="Pantalla principal de práctica">
+        <section class="workspace card" aria-labelledby="practiceTitle">
+          <div class="workspace__topline">
+            <div>
+              <p class="eyebrow">Texto superior</p>
+              <h2 id="practiceTitle">Fragmento de práctica</h2>
+            </div>
+            <span class="status-pill status-pill--live">Sesión activa</span>
+          </div>
+
+          <article class="text-panel" aria-label="Texto de referencia">
+            <span class="typed">La práctica constante</span>
+            <span class="current"> mejora</span>
+            <span> la memoria muscular, reduce errores y convierte cada pulsación en un movimiento más natural.</span>
+          </article>
+
+          <div class="metrics-bar" aria-label="Métricas de escritura">
+            <div class="metric-card">
+              <span class="metric-card__label">Velocidad</span>
+              <strong>48</strong>
+              <span class="metric-card__unit">PPM</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Precisión</span>
+              <strong>96%</strong>
+              <span class="metric-card__unit">12/14 correctas</span>
+            </div>
+            <div class="metric-card metric-card--warning">
+              <span class="metric-card__label">Errores</span>
+              <strong>2</strong>
+              <span class="metric-card__unit">Revisar acentos</span>
+            </div>
+            <div class="metric-card">
+              <span class="metric-card__label">Tiempo</span>
+              <strong>01:24</strong>
+              <span class="metric-card__unit">restante</span>
+            </div>
+          </div>
+
+          <label class="typing-area" for="typingInput">
+            <span class="typing-area__label">Área de escritura inferior</span>
+            <textarea
+              id="typingInput"
+              aria-describedby="typingHelp"
+              spellcheck="false"
+            >La práctica constante mejroa</textarea>
+            <span class="typing-area__error" id="typingHelp">
+              Se detectó un error: “mejroa” debería escribirse “mejora”.
+            </span>
+          </label>
+        </section>
+
+        <aside class="controls card" aria-label="Controles de práctica">
+          <div>
+            <p class="eyebrow">Configuración</p>
+            <h2>Personaliza la sesión</h2>
+          </div>
+
+          <label class="field" for="levelSelect">
+            <span>Nivel</span>
+            <select id="levelSelect">
+              <option>Básico · palabras cortas</option>
+              <option selected>Intermedio · frases completas</option>
+              <option>Avanzado · textos largos</option>
+            </select>
+          </label>
+
+          <label class="field" for="modeSelect">
+            <span>Modo</span>
+            <select id="modeSelect">
+              <option selected>Contrarreloj</option>
+              <option>Precisión perfecta</option>
+              <option>Entrenamiento libre</option>
+            </select>
+          </label>
+
+          <div class="quick-stats" aria-label="Resumen rápido">
+            <div>
+              <span>Racha</span>
+              <strong>8 días</strong>
+            </div>
+            <div>
+              <span>Objetivo</span>
+              <strong>55 PPM</strong>
+            </div>
+          </div>
+
+          <div class="button-group" aria-label="Botones de control">
+            <button class="button button--primary" type="button">Iniciar</button>
+            <button class="button" type="button">Pausar</button>
+            <button class="button button--ghost" type="button">Reiniciar</button>
+          </div>
+
+          <div class="error-preview" role="status">
+            <strong>Estado de error</strong>
+            <p>Las tarjetas y el área de escritura usan acentos rojos cuando hay fallos.</p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Mecanografía</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <title>Mecanografía · Progreso</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Panel personal</p>
+          <h1 id="page-title">Progreso de mecanografía</h1>
+          <p class="hero__copy">
+            Revisa tu historial, descubre tus mejores marcas y entiende cómo evolucionan tus PPM, WPM y precisión con cada práctica.
+          </p>
+        </div>
+        <div class="hero__summary" aria-label="Resumen de tiempo total">
+          <span>Tiempo total</span>
+          <strong id="totalPracticeTime">0 min</strong>
+          <small id="sessionCount">0 sesiones</small>
+        </div>
+      </section>
+
+      <section class="filters" aria-labelledby="filters-title">
+        <div>
+          <p class="eyebrow">Filtros</p>
+          <h2 id="filters-title">Analiza un tramo concreto</h2>
+        </div>
+        <form id="progressFilters" class="filters__grid">
+          <label>
+            Nivel
+            <select id="levelFilter" name="level">
+              <option value="all">Todos</option>
+            </select>
+          </label>
+          <label>
+            Modo
+            <select id="modeFilter" name="mode">
+              <option value="all">Todos</option>
+            </select>
+          </label>
+          <label>
+            Desde
+            <input id="fromDateFilter" name="fromDate" type="date" />
+          </label>
+          <label>
+            Hasta
+            <input id="toDateFilter" name="toDate" type="date" />
+          </label>
+          <label>
+            Duración
+            <select id="durationFilter" name="duration">
+              <option value="all">Todas</option>
+              <option value="short">Hasta 5 min</option>
+              <option value="medium">6-15 min</option>
+              <option value="long">Más de 15 min</option>
+            </select>
+          </label>
+          <button type="reset">Limpiar filtros</button>
+        </form>
+      </section>
+
+      <section class="metrics" aria-label="Indicadores principales">
+        <article class="metric-card">
+          <span>Mejor PPM</span>
+          <strong id="bestPpm">0</strong>
+          <small id="bestPpmMeta">Sin datos</small>
+        </article>
+        <article class="metric-card">
+          <span>Mejor WPM</span>
+          <strong id="bestWpm">0</strong>
+          <small id="bestWpmMeta">Sin datos</small>
+        </article>
+        <article class="metric-card">
+          <span>Precisión media</span>
+          <strong id="averageAccuracy">0%</strong>
+          <small id="accuracyTrend">En sesiones filtradas</small>
+        </article>
+        <article class="metric-card">
+          <span>Mejor racha</span>
+          <strong id="bestStreak">0</strong>
+          <small>caracteres correctos</small>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel chart-panel">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">Evolución</p>
+              <h2>PPM y WPM</h2>
+            </div>
+            <div class="legend" aria-label="Leyenda del gráfico">
+              <span><i class="legend__dot legend__dot--ppm"></i>PPM</span>
+              <span><i class="legend__dot legend__dot--wpm"></i>WPM</span>
+            </div>
+          </div>
+          <canvas id="speedChart" width="900" height="360" aria-label="Gráfico de evolución de PPM y WPM"></canvas>
+        </article>
+
+        <article class="panel frequent-errors">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">Precisión</p>
+              <h2>Errores frecuentes</h2>
+            </div>
+          </div>
+          <div id="frequentErrorsList" class="errors-list"></div>
+        </article>
+      </section>
+
+      <section class="panel history-panel" aria-labelledby="history-title">
+        <div class="panel__header">
+          <div>
+            <p class="eyebrow">Registro</p>
+            <h2 id="history-title">Historial de prácticas</h2>
+          </div>
+          <span id="historySummary" class="pill">0 resultados</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Usuario</th>
+                <th>Config.</th>
+                <th>PPM</th>
+                <th>Precisión</th>
+                <th>Evolución</th>
+              </tr>
+            </thead>
+            <tbody id="historyTable"></tbody>
+                <th>Nivel</th>
+                <th>Modo</th>
+                <th>Duración</th>
+                <th>PPM</th>
+                <th>WPM</th>
+                <th>Precisión</th>
+                <th>Errores</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
     <script type="module" src="src/app.js"></script>
   </body>
 </html>
