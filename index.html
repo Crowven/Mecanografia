@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mecanografía experta</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Entrenamiento avanzado</p>
+          <h1>Mecanografía experta de resistencia</h1>
+          <p>
+            Practica con textos extensos, pruebas cronometradas largas y contenido rico en
+            números, símbolos, puntuación avanzada y vocabulario variado.
+          </p>
+        </div>
+        <div class="hero-card" aria-label="Resumen de capacidades">
+          <strong>3 pruebas expertas</strong>
+          <span>8-15 min · métricas por tramos · análisis de ritmo</span>
+        </div>
+      </header>
+
+      <section class="panel controls" aria-label="Configuración de prueba">
+        <label for="exercise-select">Ejercicio experto</label>
+        <select id="exercise-select"></select>
+        <button id="start-button" type="button">Iniciar prueba</button>
+        <button id="reset-button" type="button" class="secondary">Reiniciar</button>
+      </section>
+
+      <section class="stats-grid" aria-label="Indicadores en tiempo real">
+        <article class="stat"><span>Tiempo</span><strong id="time-left">--:--</strong></article>
+        <article class="stat"><span>PPM</span><strong id="wpm">0</strong></article>
+        <article class="stat"><span>Precisión</span><strong id="accuracy">100%</strong></article>
+        <article class="stat"><span>Resistencia</span><strong id="endurance">0</strong></article>
+      </section>
+
+      <section class="workspace">
+        <article class="panel prompt-panel">
+          <div class="panel-heading">
+            <h2 id="exercise-title">Selecciona una prueba</h2>
+            <span id="exercise-duration" class="badge">-- min</span>
+          </div>
+          <p id="exercise-description" class="muted"></p>
+          <div id="target-text" class="target-text" aria-live="polite"></div>
+        </article>
+
+        <article class="panel typing-panel">
+          <label for="typing-input">Escribe aquí</label>
+          <textarea
+            id="typing-input"
+            rows="12"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+            disabled
+            placeholder="Pulsa “Iniciar prueba” para comenzar..."
+          ></textarea>
+          <p id="feedback" class="feedback" role="status">La prueba registrará tu ritmo cada 30 segundos.</p>
+        </article>
+      </section>
+
+      <section class="panel results" aria-label="Resultados detallados">
+        <div class="panel-heading">
+          <h2>Seguimiento de rendimiento</h2>
+          <span class="badge">resistencia · precisión sostenida · ritmo</span>
+        </div>
+        <div id="results-summary" class="results-summary"></div>
+        <canvas id="pace-chart" width="900" height="260" aria-label="Evolución del ritmo por tramos"></canvas>
+      </section>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

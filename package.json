@@ -1,0 +1,15 @@
+{
+  "name": "mecanografia",
+  "version": "1.0.0",
+  "description": "Entrenador de mecanografía con ejercicios expertos y métricas de resistencia.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "mecanografia",
+    "typing",
+    "practice"
+  ],
+  "license": "MIT"
+}
