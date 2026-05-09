@@ -6,7 +6,7 @@ import {
   compareTyping,
   expertExercises,
   summarizePerformance
-} from '../src/app.js';
+} from '../src/core/expertMetrics.js';
 
 test('expert exercises are long timed challenges with advanced content', () => {
   assert.equal(expertExercises.length, 3);

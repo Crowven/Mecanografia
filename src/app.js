@@ -5,4 +5,4 @@ export {
   calculateWpm,
   buildSegments,
   summarizePerformance
-} from './domain/assessmentMetrics.js';
+} from './core/expertMetrics.js';
