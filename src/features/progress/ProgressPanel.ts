@@ -1,4 +1,4 @@
-import type { ProgressRecord } from '../persistence/localProgressRepository';
+import type { ProgressRecord } from '../../storage/localProgressRepository';
 
 export const renderProgressPanel = (records: ProgressRecord[]): string => `
   <section class="progress-panel" aria-labelledby="progress-title">
