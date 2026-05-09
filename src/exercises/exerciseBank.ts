@@ -1,6 +1,6 @@
 import { loadExerciseBank } from './loadExerciseBank';
 
-export type ExerciseLevel = 'principiante' | 'basico' | 'intermedio' | 'avanzado';
+export type ExerciseLevel = 'principiante' | 'basico' | 'intermedio' | 'avanzado' | 'experto';
 
 export interface Exercise {
   id: string;

@@ -286,3 +286,54 @@ textarea:focus {
     grid-template-columns: 1fr;
   }
 }
+
+.exercise-selector__heading,
+.assessment__intro,
+.assessment__actions {
+  align-items: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.assessment {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgb(15 23 42 / 8%);
+  display: grid;
+  gap: 1.25rem;
+  padding: 1.25rem;
+}
+
+.assessment__target {
+  background: #0f172a;
+  border-radius: 1.25rem;
+  color: #e2e8f0;
+  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  line-height: 1.8;
+  padding: 1.25rem;
+}
+
+.assessment__input {
+  box-shadow: none;
+}
+
+.assessment__actions {
+  justify-content: flex-start;
+}
+
+.assessment-result {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 1.25rem;
+  padding: 1rem;
+}
+
+@media (max-width: 860px) {
+  .exercise-selector__heading,
+  .assessment__intro,
+  .assessment__actions {
+    display: grid;
+  }
+}
