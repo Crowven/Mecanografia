@@ -1,6 +1,85 @@
 <!doctype html>
 <html lang="es">
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mecanografía - Ejercicio de copia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="app-title">
+        <p class="eyebrow">Ejercicio de copia</p>
+        <h1 id="app-title">Mecanografía con validación carácter por carácter</h1>
+        <p class="intro">
+          Copia el texto propuesto. Cada carácter se evalúa al instante y los errores se guardan para el resumen final.
+        </p>
+      </section>
+
+      <section class="panel settings" aria-labelledby="settings-title">
+        <div>
+          <h2 id="settings-title">Configuración del aviso sonoro</h2>
+          <p>Activa o ajusta el sonido que se reproduce cuando se detecta un carácter incorrecto.</p>
+        </div>
+        <label class="toggle">
+          <input id="sound-enabled" type="checkbox" checked />
+          <span>Aviso sonoro al fallar</span>
+        </label>
+        <label>
+          Volumen
+          <input id="sound-volume" type="range" min="0" max="1" value="0.35" step="0.05" />
+        </label>
+      </section>
+
+      <section class="panel exercise" aria-labelledby="exercise-title">
+        <div class="exercise-header">
+          <div>
+            <h2 id="exercise-title">Texto a copiar</h2>
+            <p>Los caracteres verdes son correctos, los rojos incorrectos y los grises están pendientes.</p>
+          </div>
+          <button id="reset-button" type="button">Reiniciar</button>
+        </div>
+
+        <p id="target-text" class="target-text" aria-label="Texto objetivo"></p>
+
+        <label for="copy-input">Escribe aquí</label>
+        <textarea
+          id="copy-input"
+          rows="4"
+          autocomplete="off"
+          autocapitalize="off"
+          spellcheck="false"
+          placeholder="Empieza a copiar el texto..."
+        ></textarea>
+      </section>
+
+      <section class="stats-grid" aria-label="Estadísticas del ejercicio">
+        <article class="stat-card">
+          <span class="stat-label">Correctos</span>
+          <strong id="correct-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Errores registrados</span>
+          <strong id="error-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Pendientes</span>
+          <strong id="pending-count">0</strong>
+        </article>
+        <article class="stat-card">
+          <span class="stat-label">Precisión final</span>
+          <strong id="accuracy-rate">100%</strong>
+        </article>
+      </section>
+
+      <section class="panel results" aria-labelledby="results-title">
+        <h2 id="results-title">Registro de errores</h2>
+        <p id="completion-message" class="completion-message" aria-live="polite">Completa el ejercicio para ver el resultado final.</p>
+        <ol id="error-log" class="error-log"></ol>
+      </section>
+    </main>
+
+    <script src="typingExercise.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mecanografía | Entrenador</title>
