@@ -47,6 +47,8 @@ Requisitos recomendados:
 - npm 10 o superior.
 - Para Tauri: Rust, Cargo y dependencias del sistema requeridas por Tauri.
 
+Tauri forma parte de las plataformas de escritorio soportadas por el producto. Por eso `src-tauri/Cargo.lock` se mantiene versionado: las aplicaciones finales de Rust deben conservar el lockfile para que CI y los builds locales resuelvan las mismas versiones de dependencias y produzcan builds reproducibles. Si se modifica `src-tauri/Cargo.toml`, actualiza y revisa también `src-tauri/Cargo.lock` en el mismo cambio.
+
 Instala las dependencias de JavaScript con:
 
 ```bash
