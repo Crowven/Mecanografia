@@ -1,0 +1,155 @@
+{
+  "version": "1.0.0",
+  "descripcion": "Ejercicios de mecanografía de nivel básico que combinan fila superior, fila guía e inferior.",
+  "idioma": "es",
+  "filas_trabajadas": ["superior", "guia", "inferior"],
+  "ejercicios": [
+    {
+      "id": "basico-mixto-palabras-01",
+      "titulo": "Palabras frecuentes con tres filas",
+      "nivel": "basico",
+      "tipo": "palabras frecuentes",
+      "duracion_estimada": "4 min",
+      "dificultad": 1,
+      "objetivos_tecnicos": [
+        "Alternar entre fila superior, fila guía e inferior",
+        "Mantener los dedos índice y medio anclados a la fila guía",
+        "Practicar palabras comunes sin mirar el teclado"
+      ],
+      "contenido": [
+        "casa", "para", "pero", "tiene", "como", "todo", "bien", "vida", "mundo", "lugar",
+        "tiempo", "persona", "trabajo", "forma", "parte", "nuevo", "decir", "hacer", "mucho", "poco"
+      ]
+    },
+    {
+      "id": "basico-mixto-palabras-02",
+      "titulo": "Ritmo y precisión en palabras comunes",
+      "nivel": "basico",
+      "tipo": "palabras frecuentes",
+      "duracion_estimada": "5 min",
+      "dificultad": 2,
+      "objetivos_tecnicos": [
+        "Coordinar ambas manos en cambios de fila",
+        "Reducir pausas al escribir sílabas frecuentes",
+        "Conservar una velocidad constante con baja tasa de error"
+      ],
+      "contenido": [
+        "cuando", "porque", "antes", "ahora", "gente", "hasta", "desde", "nunca", "siempre", "mejor",
+        "primer", "ultimo", "gran", "pequeño", "familia", "amigo", "camino", "ciudad", "puerta", "noche"
+      ]
+    },
+    {
+      "id": "basico-mixto-frases-01",
+      "titulo": "Frases breves cotidianas",
+      "nivel": "basico",
+      "tipo": "frases breves",
+      "duracion_estimada": "5 min",
+      "dificultad": 2,
+      "objetivos_tecnicos": [
+        "Practicar espacios entre palabras con ritmo regular",
+        "Combinar letras de las tres filas dentro de frases cortas",
+        "Reforzar precisión antes de aumentar velocidad"
+      ],
+      "contenido": [
+        "la casa tiene una puerta",
+        "hoy trabajo con buen ritmo",
+        "mi familia vive cerca",
+        "cada persona tiene tiempo",
+        "un amigo camina por la ciudad",
+        "ahora puedo escribir mejor",
+        "el mundo parece tranquilo",
+        "tengo poco tiempo libre"
+      ]
+    },
+    {
+      "id": "basico-mixto-frases-02",
+      "titulo": "Frases con cambios de mano",
+      "nivel": "basico",
+      "tipo": "frases breves",
+      "duracion_estimada": "6 min",
+      "dificultad": 3,
+      "objetivos_tecnicos": [
+        "Fortalecer alternancia entre mano izquierda y derecha",
+        "Practicar desplazamientos cortos desde la fila guía",
+        "Mantener postura y retorno a teclas de referencia"
+      ],
+      "contenido": [
+        "para llegar antes tomo otro camino",
+        "la gente espera junto a la puerta",
+        "puedo hacer mucho con calma",
+        "este nuevo lugar tiene vida",
+        "desde la ventana veo la ciudad",
+        "siempre digo algo bueno",
+        "cada noche preparo mi trabajo",
+        "tengo una forma clara de practicar"
+      ]
+    },
+    {
+      "id": "basico-mixto-puntuacion-01",
+      "titulo": "Puntuación sencilla con coma y punto",
+      "nivel": "basico",
+      "tipo": "puntuacion sencilla",
+      "duracion_estimada": "5 min",
+      "dificultad": 2,
+      "objetivos_tecnicos": [
+        "Introducir coma y punto sin perder la posición base",
+        "Practicar pausas naturales en frases cortas",
+        "Evitar errores al volver desde teclas de puntuación"
+      ],
+      "contenido": [
+        "hoy practico, luego descanso.",
+        "tengo tiempo, puedo mejorar.",
+        "la casa es nueva, la puerta es grande.",
+        "camino poco, pero llego bien.",
+        "ahora escribo lento, mañana mejor.",
+        "mi amigo viene, toma asiento.",
+        "la ciudad duerme, la noche llega.",
+        "trabajo con calma, todo sale bien."
+      ]
+    },
+    {
+      "id": "basico-mixto-puntuacion-02",
+      "titulo": "Preguntas y exclamaciones básicas",
+      "nivel": "basico",
+      "tipo": "puntuacion sencilla",
+      "duracion_estimada": "6 min",
+      "dificultad": 3,
+      "objetivos_tecnicos": [
+        "Practicar signos de interrogación y exclamación en frases breves",
+        "Coordinar mayúsculas iniciales si la lección las activa",
+        "Mantener precisión en signos al inicio y final de oración"
+      ],
+      "contenido": [
+        "¿como estas hoy?",
+        "¿tienes tiempo ahora?",
+        "¡muy buen trabajo!",
+        "¿puedo tomar otro camino?",
+        "¡cada dia escribo mejor!",
+        "¿la puerta esta abierta?",
+        "¡todo parece tranquilo!",
+        "¿vienes para practicar?"
+      ]
+    },
+    {
+      "id": "basico-mixto-repaso-01",
+      "titulo": "Repaso guiado de filas combinadas",
+      "nivel": "basico",
+      "tipo": "repaso mixto",
+      "duracion_estimada": "7 min",
+      "dificultad": 3,
+      "objetivos_tecnicos": [
+        "Consolidar palabras, frases y puntuación sencilla",
+        "Aumentar fluidez en recorridos entre filas",
+        "Identificar letras que generan errores frecuentes"
+      ],
+      "contenido": [
+        "persona", "trabajo", "camino", "ciudad", "ventana",
+        "la gente camina por la ciudad.",
+        "¿tienes un nuevo trabajo?",
+        "¡practica con calma!",
+        "ahora puedo escribir frases breves.",
+        "desde mi casa veo un camino largo."
+      ]
+    }
+  ]
+}
