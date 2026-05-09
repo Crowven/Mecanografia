@@ -131,5 +131,152 @@
     </div>
 
     <script src="script.js"></script>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Mecanografía</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+    <title>Mecanografía · Progreso</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">Panel personal</p>
+          <h1 id="page-title">Progreso de mecanografía</h1>
+          <p class="hero__copy">
+            Revisa tu historial, descubre tus mejores marcas y entiende cómo evolucionan tus PPM, WPM y precisión con cada práctica.
+          </p>
+        </div>
+        <div class="hero__summary" aria-label="Resumen de tiempo total">
+          <span>Tiempo total</span>
+          <strong id="totalPracticeTime">0 min</strong>
+          <small id="sessionCount">0 sesiones</small>
+        </div>
+      </section>
+
+      <section class="filters" aria-labelledby="filters-title">
+        <div>
+          <p class="eyebrow">Filtros</p>
+          <h2 id="filters-title">Analiza un tramo concreto</h2>
+        </div>
+        <form id="progressFilters" class="filters__grid">
+          <label>
+            Nivel
+            <select id="levelFilter" name="level">
+              <option value="all">Todos</option>
+            </select>
+          </label>
+          <label>
+            Modo
+            <select id="modeFilter" name="mode">
+              <option value="all">Todos</option>
+            </select>
+          </label>
+          <label>
+            Desde
+            <input id="fromDateFilter" name="fromDate" type="date" />
+          </label>
+          <label>
+            Hasta
+            <input id="toDateFilter" name="toDate" type="date" />
+          </label>
+          <label>
+            Duración
+            <select id="durationFilter" name="duration">
+              <option value="all">Todas</option>
+              <option value="short">Hasta 5 min</option>
+              <option value="medium">6-15 min</option>
+              <option value="long">Más de 15 min</option>
+            </select>
+          </label>
+          <button type="reset">Limpiar filtros</button>
+        </form>
+      </section>
+
+      <section class="metrics" aria-label="Indicadores principales">
+        <article class="metric-card">
+          <span>Mejor PPM</span>
+          <strong id="bestPpm">0</strong>
+          <small id="bestPpmMeta">Sin datos</small>
+        </article>
+        <article class="metric-card">
+          <span>Mejor WPM</span>
+          <strong id="bestWpm">0</strong>
+          <small id="bestWpmMeta">Sin datos</small>
+        </article>
+        <article class="metric-card">
+          <span>Precisión media</span>
+          <strong id="averageAccuracy">0%</strong>
+          <small id="accuracyTrend">En sesiones filtradas</small>
+        </article>
+        <article class="metric-card">
+          <span>Mejor racha</span>
+          <strong id="bestStreak">0</strong>
+          <small>caracteres correctos</small>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel chart-panel">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">Evolución</p>
+              <h2>PPM y WPM</h2>
+            </div>
+            <div class="legend" aria-label="Leyenda del gráfico">
+              <span><i class="legend__dot legend__dot--ppm"></i>PPM</span>
+              <span><i class="legend__dot legend__dot--wpm"></i>WPM</span>
+            </div>
+          </div>
+          <canvas id="speedChart" width="900" height="360" aria-label="Gráfico de evolución de PPM y WPM"></canvas>
+        </article>
+
+        <article class="panel frequent-errors">
+          <div class="panel__header">
+            <div>
+              <p class="eyebrow">Precisión</p>
+              <h2>Errores frecuentes</h2>
+            </div>
+          </div>
+          <div id="frequentErrorsList" class="errors-list"></div>
+        </article>
+      </section>
+
+      <section class="panel history-panel" aria-labelledby="history-title">
+        <div class="panel__header">
+          <div>
+            <p class="eyebrow">Registro</p>
+            <h2 id="history-title">Historial de prácticas</h2>
+          </div>
+          <span id="historySummary" class="pill">0 resultados</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Nivel</th>
+                <th>Modo</th>
+                <th>Duración</th>
+                <th>PPM</th>
+                <th>WPM</th>
+                <th>Precisión</th>
+                <th>Errores</th>
+              </tr>
+            </thead>
+            <tbody id="historyTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="src/app.js"></script>
   </body>
 </html>
