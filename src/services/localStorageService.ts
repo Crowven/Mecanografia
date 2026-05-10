@@ -52,6 +52,7 @@ export interface FreeTestResultRecord {
   durationSeconds: number;
   textLength: number;
   accuracy: number;
+  keystrokesPerMinute: number;
   grossWordsPerMinute: number;
   netWordsPerMinute: number;
   raw?: JsonObject | null;
@@ -226,6 +227,7 @@ const normalizeFreeTestResult = (record: Partial<FreeTestResultRecord>): FreeTes
   durationSeconds: Number(record.durationSeconds ?? 0),
   textLength: Number(record.textLength ?? 0),
   accuracy: Number(record.accuracy ?? 0),
+  keystrokesPerMinute: Number(record.keystrokesPerMinute ?? 0),
   grossWordsPerMinute: Number(record.grossWordsPerMinute ?? 0),
   netWordsPerMinute: Number(record.netWordsPerMinute ?? 0),
   raw: record.raw ?? null
@@ -398,6 +400,7 @@ export class LocalPersistenceService {
       ...data,
       initialAssessment: null,
       exerciseHistory: [],
+      freeTestResults: [],
       levelProgress: createEmptyLevelProgress()
     }));
   }
