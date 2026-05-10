@@ -43,19 +43,27 @@ La arquitectura de ejercicios separa la sesión, el temporizador, las métricas 
 
 Requisitos recomendados:
 
-- Node.js 20 o superior.
-- npm 10 o superior.
+- Node.js 22.12 o superior.
+- npm 10.9.8, según la versión declarada en `packageManager`.
 - Para Tauri: Rust, Cargo y dependencias del sistema requeridas por Tauri.
 
 Tauri forma parte de las plataformas de escritorio soportadas por el producto. Por eso `src-tauri/Cargo.lock` se mantiene versionado: las aplicaciones finales de Rust deben conservar el lockfile para que CI y los builds locales resuelvan las mismas versiones de dependencias y produzcan builds reproducibles. Si se modifica `src-tauri/Cargo.toml`, actualiza y revisa también `src-tauri/Cargo.lock` en el mismo cambio.
 
-Instala las dependencias de JavaScript con:
+El proyecto versiona `package-lock.json` para que las instalaciones de JavaScript sean reproducibles. La versión de npm acordada para generar y actualizar el lockfile es la declarada en `package.json` como `packageManager` (`npm@10.9.8`).
+
+Instala las dependencias de JavaScript desde el lockfile con:
 
 ```bash
-npm install
+npm ci
 ```
 
-> Nota: el proyecto no versiona actualmente un `package-lock.json`; si necesitas instalaciones reproducibles en CI, genera y conserva el lockfile con la versión de npm acordada por el equipo.
+Si cambias `package.json`, actualiza y revisa `package-lock.json` en el mismo cambio ejecutando la versión acordada de npm:
+
+```bash
+npx npm@10.9.8 install
+```
+
+El futuro workflow de CI debe usar `npm ci` antes de ejecutar build y tests para respetar las versiones bloqueadas.
 
 ## Ejecución web
 

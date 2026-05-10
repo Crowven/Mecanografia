@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Entrenador modular de mecanografía con ejercicios expertos, métricas de progreso y soporte PWA.",
   "private": true,
+  "packageManager": "npm@10.9.8",
   "type": "module",
   "main": "electron/main.cjs",
   "scripts": {
