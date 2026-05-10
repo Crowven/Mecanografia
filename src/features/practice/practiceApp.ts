@@ -1,4 +1,5 @@
 import { renderExerciseSelector } from '../../components/ExerciseSelector';
+import { renderFreeTimedTest, type FreeTestStatus } from '../../components/FreeTimedTest';
 import { renderHeader } from '../../components/Header';
 import { renderInitialAssessment } from '../../components/InitialAssessment';
 import { renderProgressPanel } from '../progress/ProgressPanel';
@@ -7,6 +8,7 @@ import { appConfig } from '../../config/appConfig';
 import { calculateMetrics } from '../../core/metrics/metricsCalculator';
 import { createTypingSession, resetTypingSession, updateTypingSession } from '../../core/typing/typingEngine';
 import { defaultAssessmentText } from '../../data/assessmentTexts';
+import { calculateFreeTimedTestMetrics, type FreeTimedTestMetrics } from '../../domain/freeTimedTest';
 import {
   evaluateInitialAssessment,
   type InitialAssessmentResult,
@@ -33,7 +35,7 @@ export interface PracticeAppHandle {
   destroy(): void;
 }
 
-type AppMode = 'practice' | 'initial-assessment';
+type AppMode = 'practice' | 'initial-assessment' | 'free-test';
 
 const recommendedLevelToExerciseLevel = (recommendedLevel: RecommendedLevel): ExerciseLevel =>
   recommendedLevel === 'inicial' ? 'principiante' : recommendedLevel;
@@ -55,6 +57,11 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
   let assessmentStartedAt: number | undefined;
   let assessmentResult: InitialAssessmentResult | undefined;
   let importExportMessage = '';
+  let freeTestDurationSeconds = 60;
+  let freeTestInput = '';
+  let freeTestStartedAt: number | undefined;
+  let freeTestResult: FreeTimedTestMetrics | undefined;
+  let freeTestTimerId: number | undefined;
   let abortController = new AbortController();
 
   const selectExercise = (exerciseId: string): void => {
@@ -83,12 +90,66 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
     syncSelectedExerciseWithFilters();
   };
 
+  const getFreeTestStatus = (): FreeTestStatus => {
+    if (freeTestResult) return 'finished';
+    if (freeTestStartedAt) return 'running';
+    return 'idle';
+  };
+
+  const getFreeTestRemainingSeconds = (now = Date.now()): number => {
+    if (!freeTestStartedAt || freeTestResult) return freeTestDurationSeconds;
+    return Math.max(0, freeTestDurationSeconds - Math.floor((now - freeTestStartedAt) / 1000));
+  };
+
+  const clearFreeTestTimer = (): void => {
+    if (freeTestTimerId !== undefined) {
+      window.clearInterval(freeTestTimerId);
+      freeTestTimerId = undefined;
+    }
+  };
+
+  const startFreeTestTimer = (): void => {
+    if (freeTestStartedAt || freeTestResult) return;
+    freeTestStartedAt = Date.now();
+    freeTestTimerId = window.setInterval(render, 250);
+  };
+
+  const finishFreeTest = (): void => {
+    if (freeTestResult) return;
+    clearFreeTestTimer();
+    const elapsedSeconds = freeTestStartedAt
+      ? Math.min(freeTestDurationSeconds, Math.max(Math.ceil((Date.now() - freeTestStartedAt) / 1000), 1))
+      : freeTestDurationSeconds;
+    freeTestResult = calculateFreeTimedTestMetrics(freeTestInput, elapsedSeconds);
+    progressRepository.saveFreeTestResult({
+      id: `free-test_${Date.now()}`,
+      completedAt: new Date().toISOString(),
+      title: 'Prueba libre',
+      durationSeconds: freeTestResult.durationSeconds,
+      textLength: freeTestResult.textLength,
+      accuracy: freeTestResult.accuracy,
+      keystrokesPerMinute: freeTestResult.keystrokesPerMinute,
+      grossWordsPerMinute: freeTestResult.grossWordsPerMinute,
+      netWordsPerMinute: freeTestResult.netWordsPerMinute,
+      raw: { input: freeTestInput }
+    });
+  };
+
+  const resetFreeTest = (): void => {
+    clearFreeTestTimer();
+    freeTestInput = '';
+    freeTestStartedAt = undefined;
+    freeTestResult = undefined;
+  };
+
   const bindEvents = (): void => {
     abortController.abort();
     abortController = new AbortController();
     const { signal } = abortController;
 
+    const openPracticeButton = container.querySelector<HTMLButtonElement>('#open-practice');
     const openAssessmentButton = container.querySelector<HTMLButtonElement>('#open-assessment');
+    const openFreeTestButton = container.querySelector<HTMLButtonElement>('#open-free-test');
     const backToPracticeButton = container.querySelector<HTMLButtonElement>('#back-to-practice');
     const exerciseSelect = container.querySelector<HTMLSelectElement>('#exercise-select');
     const levelFilter = container.querySelector<HTMLSelectElement>('#exercise-level-filter');
@@ -102,6 +163,11 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
     const assessmentTextArea = container.querySelector<HTMLTextAreaElement>('#assessment-input');
     const finishAssessmentButton = container.querySelector<HTMLButtonElement>('#finish-assessment');
     const resetAssessmentButton = container.querySelector<HTMLButtonElement>('#reset-assessment');
+    const freeTestDurationSelect = container.querySelector<HTMLSelectElement>('#free-test-duration');
+    const freeTestInputElement = container.querySelector<HTMLTextAreaElement>('#free-test-input');
+    const startFreeTestButton = container.querySelector<HTMLButtonElement>('#start-free-test');
+    const finishFreeTestButton = container.querySelector<HTMLButtonElement>('#finish-free-test');
+    const resetFreeTestButton = container.querySelector<HTMLButtonElement>('#reset-free-test');
 
     const updateFilters = (nextFilters: ExerciseFilters): void => {
       filters = nextFilters;
@@ -136,10 +202,28 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
       render();
     };
 
+    openPracticeButton?.addEventListener(
+      'click',
+      () => {
+        mode = 'practice';
+        render();
+      },
+      { signal }
+    );
+
     openAssessmentButton?.addEventListener(
       'click',
       () => {
         mode = 'initial-assessment';
+        render();
+      },
+      { signal }
+    );
+
+    openFreeTestButton?.addEventListener(
+      'click',
+      () => {
+        mode = 'free-test';
         render();
       },
       { signal }
@@ -295,6 +379,91 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
       },
       { signal }
     );
+
+    freeTestDurationSelect?.addEventListener(
+      'change',
+      (event) => {
+        freeTestDurationSeconds = Number((event.target as HTMLSelectElement).value);
+        resetFreeTest();
+        render();
+      },
+      { signal }
+    );
+
+    freeTestInputElement?.addEventListener(
+      'input',
+      (event) => {
+        if (freeTestResult) return;
+        freeTestInput = (event.target as HTMLTextAreaElement).value;
+        if (freeTestInput.length > 0 && !freeTestStartedAt) {
+          startFreeTestTimer();
+        }
+        render();
+        container.querySelector<HTMLTextAreaElement>('#free-test-input')?.focus();
+      },
+      { signal }
+    );
+
+    startFreeTestButton?.addEventListener(
+      'click',
+      () => {
+        startFreeTestTimer();
+        render();
+        container.querySelector<HTMLTextAreaElement>('#free-test-input')?.focus();
+      },
+      { signal }
+    );
+
+    finishFreeTestButton?.addEventListener(
+      'click',
+      () => {
+        finishFreeTest();
+        render();
+      },
+      { signal }
+    );
+
+    resetFreeTestButton?.addEventListener(
+      'click',
+      () => {
+        resetFreeTest();
+        render();
+        container.querySelector<HTMLTextAreaElement>('#free-test-input')?.focus();
+      },
+      { signal }
+    );
+  };
+
+  const renderModeSwitcher = (): string => `
+    <div class="mode-switcher" aria-label="Modos de práctica">
+      <button id="open-practice" type="button" ${mode === 'practice' ? 'disabled' : ''}>Ejercicios</button>
+      <button id="open-assessment" type="button" ${mode === 'initial-assessment' ? 'disabled' : ''}>Evaluación inicial</button>
+      <button id="open-free-test" type="button" ${mode === 'free-test' ? 'disabled' : ''}>Prueba libre</button>
+    </div>
+  `;
+
+  const renderWorkspace = (metrics: ReturnType<typeof calculateMetrics>): string => {
+    if (mode === 'initial-assessment') {
+      return renderInitialAssessment(defaultAssessmentText, assessmentInput, assessmentResult);
+    }
+
+    if (mode === 'free-test') {
+      return renderFreeTimedTest({
+        durationSeconds: freeTestDurationSeconds,
+        input: freeTestInput,
+        remainingSeconds: getFreeTestRemainingSeconds(),
+        status: getFreeTestStatus(),
+        result: freeTestResult
+      });
+    }
+
+    return `${renderExerciseSelector(filteredExercises, selectedExercise.id, {
+      levels: getExerciseLevels(exerciseBank),
+      types: getExerciseTypes(exerciseBank),
+      tags: getExerciseTags(exerciseBank),
+      filters
+    })}
+    ${renderTypingTrainer(selectedExercise, session, metrics)}`;
   };
 
   const render = (): void => {
@@ -302,23 +471,21 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
     const capabilities = getPlatformCapabilities(appConfig);
     syncSelectedExerciseWithFilters();
 
+    if (freeTestStartedAt && !freeTestResult && getFreeTestRemainingSeconds() <= 0) {
+      finishFreeTest();
+    }
+
     container.innerHTML = `
       ${renderHeader(appConfig, capabilities)}
       <main class="layout">
         <section class="workspace">
-          ${
-            mode === 'initial-assessment'
-              ? renderInitialAssessment(defaultAssessmentText, assessmentInput, assessmentResult)
-              : `${renderExerciseSelector(filteredExercises, selectedExercise.id, {
-                  levels: getExerciseLevels(exerciseBank),
-                  types: getExerciseTypes(exerciseBank),
-                  tags: getExerciseTags(exerciseBank),
-                  filters
-                })}
-                ${renderTypingTrainer(selectedExercise, session, metrics)}`
-          }
+          ${renderModeSwitcher()}
+          ${renderWorkspace(metrics)}
         </section>
-        ${renderProgressPanel(progressRepository.list(), { importExportMessage })}
+        ${renderProgressPanel(progressRepository.list(), {
+          importExportMessage,
+          freeTestResults: progressRepository.listFreeTestResults()
+        })}
       </main>
     `;
 
@@ -331,6 +498,7 @@ export const mountPracticeApp = (container: HTMLElement): PracticeAppHandle => {
     render,
     destroy() {
       abortController.abort();
+      clearFreeTestTimer();
       container.innerHTML = '';
     }
   };

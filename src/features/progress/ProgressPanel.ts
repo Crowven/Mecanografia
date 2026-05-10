@@ -1,4 +1,5 @@
-import { isInitialAssessmentRecord, type ProgressRecord } from '../../storage/localProgressRepository';
+import type { ProgressRecord } from '../../storage/localProgressRepository';
+import type { FreeTestResultRecord } from '../../services/localStorageService';
 
 const formatNumber = (value: number): string =>
   new Intl.NumberFormat('es', { maximumFractionDigits: 2 }).format(value);
@@ -13,9 +14,67 @@ const escapeHtml = (value: string): string =>
 
 export interface ProgressPanelOptions {
   importExportMessage?: string;
+  freeTestResults?: FreeTestResultRecord[];
 }
 
-export const renderProgressPanel = (records: ProgressRecord[], options: ProgressPanelOptions = {}): string => `
+const renderProgressRows = (records: ProgressRecord[], freeTestResults: FreeTestResultRecord[]): string => {
+  const rows = [
+    ...records.map((record) => ({ completedAt: record.completedAt, kind: 'progress' as const, record })),
+    ...freeTestResults.map((record) => ({ completedAt: record.completedAt, kind: 'free-test' as const, record }))
+  ].sort((a, b) => b.completedAt.localeCompare(a.completedAt));
+
+  return rows
+    .map((entry) => {
+      const date = new Date(entry.completedAt).toLocaleString('es');
+
+      if (entry.kind === 'free-test') {
+        return `
+          <tr>
+            <td>${date}</td>
+            <td>${escapeHtml(entry.record.title)}</td>
+            <td>${formatNumber(entry.record.durationSeconds)} s</td>
+            <td>${formatNumber(entry.record.keystrokesPerMinute)}</td>
+            <td>${formatNumber(entry.record.grossWordsPerMinute)}</td>
+            <td>${formatNumber(entry.record.netWordsPerMinute)}</td>
+            <td>${formatNumber(entry.record.accuracy)}%</td>
+            <td>${formatNumber(entry.record.textLength)} caracteres</td>
+          </tr>`;
+      }
+
+      if (entry.record.type === 'initial-assessment') {
+        return `
+          <tr>
+            <td>${date}</td>
+            <td>Evaluación inicial</td>
+            <td>${formatNumber(entry.record.durationSeconds)} s</td>
+            <td>${formatNumber(entry.record.keystrokesPerMinute)}</td>
+            <td>${formatNumber(entry.record.grossWordsPerMinute)}</td>
+            <td>${formatNumber(entry.record.netWordsPerMinute)}</td>
+            <td>${formatNumber(entry.record.accuracy)}%</td>
+            <td>${entry.record.recommendedLevel}</td>
+          </tr>`;
+      }
+
+      return `
+        <tr>
+          <td>${date}</td>
+          <td>Ejercicio</td>
+          <td>${entry.record.metrics.elapsedSeconds} s</td>
+          <td>${entry.record.metrics.keystrokesPerMinute}</td>
+          <td>${entry.record.metrics.grossWordsPerMinute}</td>
+          <td>${entry.record.metrics.netWordsPerMinute}</td>
+          <td>${entry.record.metrics.accuracy}%</td>
+          <td>—</td>
+        </tr>`;
+    })
+    .join('');
+};
+
+export const renderProgressPanel = (records: ProgressRecord[], options: ProgressPanelOptions = {}): string => {
+  const freeTestResults = options.freeTestResults ?? [];
+  const hasRecords = records.length > 0 || freeTestResults.length > 0;
+
+  return `
   <section class="progress-panel" aria-labelledby="progress-title">
     <div class="panel-heading">
       <div>
@@ -27,13 +86,13 @@ export const renderProgressPanel = (records: ProgressRecord[], options: Progress
         <button id="export-progress" type="button">Exportar JSON</button>
         <label class="import-button" for="import-progress-file">Importar JSON</label>
         <input id="import-progress-file" type="file" accept="application/json,.json" />
-        <button id="clear-progress" type="button" ${records.length === 0 ? 'disabled' : ''}>Limpiar</button>
+        <button id="clear-progress" type="button" ${!hasRecords ? 'disabled' : ''}>Limpiar</button>
       </div>
     </div>
     ${options.importExportMessage ? `<p class="persistence-message" role="status">${escapeHtml(options.importExportMessage)}</p>` : ''}
     ${
-      records.length === 0
-        ? '<p class="empty-state">Completa un ejercicio o una evaluación inicial para guardar métricas en este dispositivo.</p>'
+      !hasRecords
+        ? '<p class="empty-state">Completa un ejercicio, una evaluación inicial o una prueba libre para guardar métricas en este dispositivo.</p>'
         : `<table class="history-table">
             <thead>
               <tr>
@@ -44,43 +103,14 @@ export const renderProgressPanel = (records: ProgressRecord[], options: Progress
                 <th scope="col">WPM brutas</th>
                 <th scope="col">WPM netas</th>
                 <th scope="col">Precisión</th>
-                <th scope="col">Nivel</th>
+                <th scope="col">Detalle</th>
               </tr>
             </thead>
             <tbody>
-              ${records
-                .map((record) => {
-                  const date = new Date(record.completedAt).toLocaleString('es');
-
-                  if (isInitialAssessmentRecord(record)) {
-                    return `
-                      <tr>
-                        <td>${date}</td>
-                        <td>Evaluación inicial</td>
-                        <td>${formatNumber(record.durationSeconds)} s</td>
-                        <td>${formatNumber(record.keystrokesPerMinute)}</td>
-                        <td>${formatNumber(record.grossWordsPerMinute)}</td>
-                        <td>${formatNumber(record.netWordsPerMinute)}</td>
-                        <td>${formatNumber(record.accuracy)}%</td>
-                        <td>${record.recommendedLevel}</td>
-                      </tr>`;
-                  }
-
-                  return `
-                    <tr>
-                      <td>${date}</td>
-                      <td>Ejercicio</td>
-                      <td>${record.metrics.elapsedSeconds} s</td>
-                      <td>${record.metrics.keystrokesPerMinute}</td>
-                      <td>${record.metrics.grossWordsPerMinute}</td>
-                      <td>${record.metrics.netWordsPerMinute}</td>
-                      <td>${record.metrics.accuracy}%</td>
-                      <td>—</td>
-                    </tr>`;
-                })
-                .join('')}
+              ${renderProgressRows(records, freeTestResults)}
             </tbody>
           </table>`
     }
   </section>
 `;
+};

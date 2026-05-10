@@ -1,15 +1,18 @@
 import {
   LocalPersistenceService,
   type ExerciseHistoryRecord,
+  type FreeTestResultRecord,
   type InitialAssessmentRecord,
   type ProgressRecord
 } from '../services/localStorageService';
 
-export type { ExerciseHistoryRecord, InitialAssessmentRecord, ProgressRecord } from '../services/localStorageService';
+export type { ExerciseHistoryRecord, FreeTestResultRecord, InitialAssessmentRecord, ProgressRecord } from '../services/localStorageService';
 
 export interface ProgressRepository {
   list(): ProgressRecord[];
+  listFreeTestResults(): FreeTestResultRecord[];
   save(record: ProgressRecord): void;
+  saveFreeTestResult(record: Partial<FreeTestResultRecord>): FreeTestResultRecord;
   clear(): void;
   exportJson(): string;
   importJson(json: string, options?: { merge?: boolean }): void;
@@ -32,8 +35,14 @@ export const createLocalProgressRepository = (storageKey: string): ProgressRepos
     list() {
       return service.listProgressRecords();
     },
+    listFreeTestResults() {
+      return service.exportData().freeTestResults;
+    },
     save(record) {
       service.addProgressRecord(record);
+    },
+    saveFreeTestResult(record) {
+      return service.addFreeTestResult(record);
     },
     clear() {
       service.clearProgressRecords();

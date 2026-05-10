@@ -381,3 +381,38 @@ textarea:focus {
     justify-content: flex-start;
   }
 }
+
+.mode-switcher,
+.assessment__actions,
+.free-test__timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.mode-switcher {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 45px rgb(15 23 42 / 8%);
+  padding: 1rem;
+}
+
+.free-test__timer {
+  align-items: center;
+  background: #0f172a;
+  border-radius: 1.25rem;
+  color: #e2e8f0;
+  justify-content: space-between;
+  padding: 1rem 1.25rem;
+}
+
+.free-test__timer span {
+  color: #93c5fd;
+  font-weight: 800;
+}
+
+.free-test__timer strong {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  letter-spacing: 0.08em;
+}
